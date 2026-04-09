@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Nav />
-      <main className="max-w-7xl mx-auto px-6">
+      <main className="mx-auto px-6 border-2 border-amber-500">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/galeria" element={<Gallery />} />
