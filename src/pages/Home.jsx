@@ -1,4 +1,6 @@
 import { FaLeaf, FaClock, FaTools, FaHandshake } from "react-icons/fa";
+import { MdOutlinePhoneCallback } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -106,6 +108,88 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#ebe4d6] py-16 lg:py-24 font-text">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+          <p className="text-orange-500 font-bold mb-2 tracking-wide">
+            Jak wygląda współpraca?
+          </p>
+
+          <h2 className="font-candal text-2xl lg:text-3xl font-bold text-green-900 leading-tight">
+            4 proste kroki do zadbanego ogrodu
+          </h2>
+
+          <div className="mt-12 flex flex-col lg:flex-row items-center justify-center gap-6">
+            <div className="flex flex-col lg:flex-row items-center gap-6">
+              <div className="border-2 border-green-800 rounded-xl bg-[#fafff4] px-4 py-5 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
+                <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
+                  1
+                </p>
+                <h3 className="font-bold text-green-900">
+                  Darmowa konsultacja
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Rozmawiamy o potrzebach Twojego ogrodu
+                </p>
+              </div>
+
+              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0" />
+            </div>
+
+            <div className="flex flex-col lg:flex-row items-center gap-6">
+              <div className="border-2 border-lime-500 rounded-xl bg-[#fafff4] px-4 py-5 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
+                <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
+                  2
+                </p>
+                <h3 className="font-bold text-green-900">Plan prac</h3>
+                <p className="text-sm text-gray-600">
+                  Wspólnie ustalamy plan prac oraz wycenę.
+                </p>
+              </div>
+
+              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0" />
+            </div>
+
+            <div className="flex flex-col lg:flex-row items-center gap-6">
+              <div className="border-2 border-green-800 rounded-xl bg-[#fafff4] px-4 py-5 w-full max-w-55 shadow-lg flex flex-col gap-3 hover:scale-105 transition">
+                <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
+                  3
+                </p>
+                <h3 className="font-bold text-green-900">Realizacja</h3>
+                <p className="text-sm text-gray-600">
+                  Wykonujemy prace profesjonalnie i terminowo.
+                </p>
+              </div>
+
+              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0" />
+            </div>
+
+            <div className="border-2 border-lime-400 rounded-xl bg-[#fafff4] px-4 py-5 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
+              <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
+                4
+              </p>
+              <h3 className="font-bold text-green-900">Gotowy ogród</h3>
+              <p className="text-sm text-gray-600">
+                Ja sprzątam, Ty cieszysz się efektami
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 pt-25 flex flex-row items-center justify-end gap-4">
+            <span className="text-orange-500 font-bold text-md">
+              Darmowa konsultacja.
+            </span>
+            <p className="text-gray-700 font-semibold flex gap-2 items-center text-md ">
+              Masz pytania? Skontaktuj się z nami
+            </p>
+
+            <button className="cursor-pointer flex items-center gap-2 bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">
+              <MdOutlinePhoneCallback className="w-6 h-6" />
+              Zadzwoń
+            </button>
           </div>
         </div>
       </section>
