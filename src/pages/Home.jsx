@@ -112,7 +112,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-[#ebe4d6] py-16 lg:py-24 font-text">
+      <section className="bg-[#ebe4d6] py-16 lg:py-18 font-text">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <p className="text-orange-500 font-bold mb-2 tracking-wide">
             Jak wygląda współpraca?
@@ -122,9 +122,9 @@ const Home = () => {
             4 proste kroki do zadbanego ogrodu
           </h2>
 
-          <div className="mt-12 flex flex-col lg:flex-row items-center justify-center gap-6">
+          <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-6">
             <div className="flex flex-col lg:flex-row items-center gap-6">
-              <div className="border-2 border-green-800 rounded-xl bg-[#fafff4] px-4 py-5 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
+              <div className="border-3 border-green-800 rounded-4xl bg-[#fafff4] px-4 py-12 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
                 <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
                   1
                 </p>
@@ -136,11 +136,11 @@ const Home = () => {
                 </p>
               </div>
 
-              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0" />
+              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0 transition-transform duration-300 ease-out hover:translate-x-1" />
             </div>
 
             <div className="flex flex-col lg:flex-row items-center gap-6">
-              <div className="border-2 border-lime-500 rounded-xl bg-[#fafff4] px-4 py-5 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
+              <div className="border-3 border-lime-500 rounded-4xl bg-[#fafff4] px-4 py-12 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
                 <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
                   2
                 </p>
@@ -150,11 +150,11 @@ const Home = () => {
                 </p>
               </div>
 
-              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0" />
+              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0 transition-transform duration-300 ease-out hover:translate-x-1" />
             </div>
 
             <div className="flex flex-col lg:flex-row items-center gap-6">
-              <div className="border-2 border-green-800 rounded-xl bg-[#fafff4] px-4 py-5 w-full max-w-55 shadow-lg flex flex-col gap-3 hover:scale-105 transition">
+              <div className="border-3 border-green-800 rounded-4xl bg-[#fafff4] px-4 py-12 w-full max-w-55 shadow-lg flex flex-col gap-3 hover:scale-105 transition">
                 <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
                   3
                 </p>
@@ -164,10 +164,10 @@ const Home = () => {
                 </p>
               </div>
 
-              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0" />
+              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0 transition-transform duration-300 ease-out hover:translate-x-1" />
             </div>
 
-            <div className="border-2 border-lime-400 rounded-xl bg-[#fafff4] px-4 py-5 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
+            <div className="border-3 border-lime-400 rounded-4xl bg-[#fafff4] px-4 py-12 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
               <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
                 4
               </p>
@@ -178,7 +178,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-12 pt-25 flex flex-row items-center justify-end gap-4">
+          <div className="mt-8 pt-25 flex sm:flex-row flex-col items-center justify-end gap-4">
             <span className="text-orange-500 font-bold text-md">
               Darmowa konsultacja.
             </span>
