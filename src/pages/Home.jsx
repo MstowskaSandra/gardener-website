@@ -1,8 +1,9 @@
-import { FaLeaf, FaClock, FaTools, FaHandshake } from "react-icons/fa";
 import { MdOutlinePhoneCallback } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 import { features } from "../data/features";
 import FeatureCard from "../components/FeatureCard";
+import { servicesCards } from "../data/servicesCards";
+import ServiceCard from "../components/ServiceCard";
 FeatureCard;
 
 const Home = () => {
@@ -65,11 +66,9 @@ const Home = () => {
             <p className="text-orange-500 font-semibold mb-2 tracking-wide">
               Dlaczego my?
             </p>
-
             <h2 className="text-2xl lg:text-3xl font-extrabold text-green-800 tracking-wider">
               Mamy 9+ lat doświadczenia w pielęgnacji ogrodów
             </h2>
-
             <div className="mt-10 space-y-4">
               {features.map((item) => (
                 <FeatureCard key={item.title} {...item} />
@@ -79,7 +78,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-[#ebe4d6] py-16 lg:py-18 font-text">
+      <section className="bg-[#ebe4d6] pt-16 pb-4 lg:pt-18 font-text">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <p className="text-orange-500 font-bold mb-2 tracking-wide">
             Jak wygląda współpraca?
@@ -174,12 +173,31 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
-        <div>
-          <p></p>
-          <h2></h2>
+      <section className="bg-[#fafff4] pt-16 pb-8 lg:pt-20 font-text">
+        <div className="max-w-8xl mx-auto px-6 lg:px-10 text-center">
+          <p className="text-orange-500 font-bold mb-2 tracking-wide">
+            Nasze usługi
+          </p>
 
-          <div></div>
+          <h2 className="font-candal text-2xl lg:text-3xl font-bold text-green-900 leading-tight">
+            Kompleksowo zadbamy o Twój ogród
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-6 mt-16">
+            {servicesCards.map((service) => (
+              <ServiceCard key={service.title} {...service} />
+            ))}
+          </div>
+          <div className="flex justify-end  items-center gap-4 pt-30 pr-6 font-mont text-sm font-semibold text-green-800">
+            <p>
+              Nie znalazłeś usługi dla siebie? Skontaktuj się z nami, postaramy
+              się pomóc{" "}
+            </p>
+            <button className="cursor-pointer flex items-center gap-2 bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
+              <MdOutlinePhoneCallback className="w-6 h-6" />
+              Zadzwoń
+            </button>
+          </div>
         </div>
       </section>
     </>
