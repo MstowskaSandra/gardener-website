@@ -1,6 +1,9 @@
 import { FaLeaf, FaClock, FaTools, FaHandshake } from "react-icons/fa";
 import { MdOutlinePhoneCallback } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
+import { features } from "../data/features";
+import FeatureCard from "../components/FeatureCard";
+FeatureCard;
 
 const Home = () => {
   return (
@@ -63,50 +66,14 @@ const Home = () => {
               Dlaczego my?
             </p>
 
-            <h2 className="text-2xl lg:text-3xl font-bold text-black leading-tight">
+            <h2 className="text-2xl lg:text-3xl font-extrabold text-green-800 tracking-wider">
               Mamy 9+ lat doświadczenia w pielęgnacji ogrodów
             </h2>
 
             <div className="mt-10 space-y-4">
-              <div className="group flex items-start gap-4 p-5 rounded-2xl bg-white shadow-lg hover:shadow-md hover:-translate-y-0.5 transition border-2 border-gray-200">
-                <FaLeaf className="text-2xl text-green-700 mt-1 mx-4 shrink-0" />
-                <div>
-                  <p className="font-semibold">Wykwalifikowana kadra</p>
-                  <p className="text-sm text-gray-600">
-                    Doświadczeni specjaliści dbający o każdy szczegół.
-                  </p>
-                </div>
-              </div>
-
-              <div className="group flex items-start gap-4 p-5 rounded-2xl bg-[#93d832]/30 shadow-lg hover:shadow-md hover:-translate-y-0.5 transition  border-2 border-gray-200">
-                <FaClock className="text-2xl text-green-800 mt-1 mx-4 shrink-0" />
-                <div>
-                  <p className="font-semibold">Terminowość i dokładność</p>
-                  <p className="text-sm text-gray-600">
-                    Realizujemy usługi zgodnie z ustalonym terminem.
-                  </p>
-                </div>
-              </div>
-
-              <div className="group flex items-start gap-4 p-5 rounded-2xl bg-white shadow-lg hover:shadow-md hover:-translate-y-0.5 transition border-2 border-gray-200">
-                <FaTools className="text-2xl text-green-700 mt-1 mx-4 shrink-0" />
-                <div>
-                  <p className="font-semibold">Profesjonalny sprzęt</p>
-                  <p className="text-sm text-gray-600">
-                    Nowoczesne narzędzia do pielęgnacji ogrodów i drzew.
-                  </p>
-                </div>
-              </div>
-
-              <div className="group flex items-start gap-4 p-5 rounded-2xl bg-[#93d832]/30 shadow-lg hover:shadow-md hover:-translate-y-0.5 transition  border-2 border-gray-200">
-                <FaHandshake className="text-2xl text-green-800 mt-1 mx-4 shrink-0" />
-                <div>
-                  <p className="font-semibold">Indywidualne podejście</p>
-                  <p className="text-sm text-gray-600">
-                    Każdy ogród traktujemy indywidualnie.
-                  </p>
-                </div>
-              </div>
+              {features.map((item) => (
+                <FeatureCard key={item.title} {...item} />
+              ))}
             </div>
           </div>
         </div>
@@ -191,6 +158,28 @@ const Home = () => {
               Zadzwoń
             </button>
           </div>
+        </div>
+      </section>
+
+      <section
+        className="relative h-[60vh] sm:h-[65vh] md:h-[70vh] lg:h-[75vh] w-full bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/assets/background-section4.svg')" }}
+      >
+        <div className="absolute inset-0 bg-white/40"></div>
+
+        <div className="relative z-10 flex h-full items-center justify-center">
+          <h2 className="font-candal px-4 md:px-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#fafff4] tracking-wider drop-shadow-lg">
+            Dbamy o szczegóły.
+          </h2>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p></p>
+          <h2></h2>
+
+          <div></div>
         </div>
       </section>
     </>
