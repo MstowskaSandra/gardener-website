@@ -6,7 +6,9 @@ import { servicesCards } from "../data/servicesCards";
 import ServiceCard from "../components/ServiceCard";
 import { steps } from "../data/steps";
 import StepCard from "../components/StepCard";
-FeatureCard;
+import ReviewCard from "../components/ReviewCard";
+import { reviews } from "../data/reviews";
+import { FcGoogle } from "react-icons/fc";
 
 const Home = () => {
   return (
@@ -36,7 +38,7 @@ const Home = () => {
               od zieleni po wysokie drzewa
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg lg:text-xl text-gray-700">
+            <p className="mt-6 text-mont font-semibold sm:text-lg lg:text-xl text-gray-700">
               Kompleksowa pielęgnacja ogrodów, trawników i drzew. Wszystko,
               czego potrzebuje Twój ogród.
             </p>
@@ -71,7 +73,7 @@ const Home = () => {
             <h2 className="text-2xl lg:text-3xl font-mont font-extrabold text-green-800 tracking-wider">
               Mamy 9+ lat doświadczenia w pielęgnacji ogrodów
             </h2>
-            <div className="mt-10 space-y-4">
+            <div className="flex flex-col py-12 gap-6 items-center">
               {features.map((item) => (
                 <FeatureCard key={item.title} {...item} />
               ))}
@@ -105,7 +107,7 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="mt-8 pt-25 flex sm:flex-row flex-col items-center justify-end gap-4">
+          <div className="pt-25 pb-8 flex sm:flex-row flex-col items-center justify-end gap-2">
             <span className="text-orange-500 font-bold text-md">
               Darmowa konsultacja.
             </span>
@@ -113,7 +115,7 @@ const Home = () => {
               Masz pytania? Skontaktuj się z nami
             </p>
 
-            <button className="cursor-pointer flex items-center gap-2 bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">
+            <button className="ml-4 cursor-pointer flex items-center gap-2 bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
               <MdOutlinePhoneCallback className="w-6 h-6" />
               Zadzwoń
             </button>
@@ -174,6 +176,30 @@ const Home = () => {
           <h2 className="font-mont px-4 md:px-8 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#fafff4] tracking-wider drop-shadow-lg">
             Najlepszy sprzęt.
           </h2>
+        </div>
+      </section>
+
+      <section className="bg-[#ebe4d6] pt-16 pb-6 lg:pt-18 font-text">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+          <p className="text-orange-500 font-bold mb-2 tracking-wide">OPINIE</p>
+
+          <h2 className="font-candal pb-8 text-2xl lg:text-3xl font-bold text-green-900 leading-tight">
+            Nasza praca mówi sama za siebie, <br />
+            tak samo jak opinie naszych klientów
+          </h2>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-6 mt-12 px-12">
+          {reviews.map((item, index) => (
+            <ReviewCard key={index} {...item} />
+          ))}
+        </div>
+
+        <div className="mt-12 flex justify-end pr-12">
+          <button className="flex items-center gap-2 cursor-pointer font-mont text-xs sm:text-sm font-semibold text-white px-5 py-2 rounded-full bg-orange-500 hover:bg-orange-600 hover:scale-105 transition">
+            Sprawdź nas w Google
+            <FcGoogle className="text-lg " />
+          </button>
         </div>
       </section>
     </>
