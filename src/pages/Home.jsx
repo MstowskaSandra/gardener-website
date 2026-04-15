@@ -4,6 +4,8 @@ import { features } from "../data/features";
 import FeatureCard from "../components/FeatureCard";
 import { servicesCards } from "../data/servicesCards";
 import ServiceCard from "../components/ServiceCard";
+import { steps } from "../data/steps";
+import StepCard from "../components/StepCard";
 FeatureCard;
 
 const Home = () => {
@@ -63,10 +65,10 @@ const Home = () => {
           </div>
 
           <div>
-            <p className="text-orange-500 font-semibold mb-2 tracking-wide">
+            <p className="text-orange-500 font-bold mb-2 tracking-wide">
               Dlaczego my?
             </p>
-            <h2 className="text-2xl lg:text-3xl font-extrabold text-green-800 tracking-wider">
+            <h2 className="text-2xl lg:text-3xl font-mont font-extrabold text-green-800 tracking-wider">
               Mamy 9+ lat doświadczenia w pielęgnacji ogrodów
             </h2>
             <div className="mt-10 space-y-4">
@@ -78,70 +80,29 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-[#ebe4d6] pt-16 pb-4 lg:pt-18 font-text">
+      <section className="bg-[#ebe4d6] pt-16 pb-6 lg:pt-18 font-text">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <p className="text-orange-500 font-bold mb-2 tracking-wide">
             Jak wygląda współpraca?
           </p>
 
-          <h2 className="font-candal text-2xl lg:text-3xl font-bold text-green-900 leading-tight">
+          <h2 className="font-candal pb-8 text-2xl lg:text-3xl font-bold text-green-900 leading-tight">
             4 proste kroki do zadbanego ogrodu
           </h2>
 
-          <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-6">
-            <div className="flex flex-col lg:flex-row items-center gap-6">
-              <div className="border-3 border-green-800 rounded-4xl bg-[#fafff4] px-4 py-12 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
-                <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
-                  1
-                </p>
-                <h3 className="font-bold text-green-900">
-                  Darmowa konsultacja
-                </h3>
-                <p className="text-sm text-gray-600">
-                  Rozmawiamy o potrzebach Twojego ogrodu
-                </p>
+          <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-6 flex-wrap">
+            {steps.map((step, index) => (
+              <div
+                key={step.number}
+                className="flex flex-col lg:flex-row items-center gap-6"
+              >
+                <StepCard {...step} />
+
+                {index < steps.length - 1 && (
+                  <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0 transition-transform duration-300 ease-out hover:scale-120" />
+                )}
               </div>
-
-              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0 transition-transform duration-300 ease-out hover:translate-x-1" />
-            </div>
-
-            <div className="flex flex-col lg:flex-row items-center gap-6">
-              <div className="border-3 border-lime-500 rounded-4xl bg-[#fafff4] px-4 py-12 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
-                <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
-                  2
-                </p>
-                <h3 className="font-bold text-green-900">Plan prac</h3>
-                <p className="text-sm text-gray-600">
-                  Wspólnie ustalamy plan prac oraz wycenę.
-                </p>
-              </div>
-
-              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0 transition-transform duration-300 ease-out hover:translate-x-1" />
-            </div>
-
-            <div className="flex flex-col lg:flex-row items-center gap-6">
-              <div className="border-3 border-green-800 rounded-4xl bg-[#fafff4] px-4 py-12 w-full max-w-55 shadow-lg flex flex-col gap-3 hover:scale-105 transition">
-                <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
-                  3
-                </p>
-                <h3 className="font-bold text-green-900">Realizacja</h3>
-                <p className="text-sm text-gray-600">
-                  Wykonujemy prace profesjonalnie i terminowo.
-                </p>
-              </div>
-
-              <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0 transition-transform duration-300 ease-out hover:translate-x-1" />
-            </div>
-
-            <div className="border-3 border-lime-400 rounded-4xl bg-[#fafff4] px-4 py-12 w-full max-w-55 shadow-lg  flex flex-col gap-3 hover:scale-105 transition">
-              <p className="font-text text-5xl font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
-                4
-              </p>
-              <h3 className="font-bold text-green-900">Gotowy ogród</h3>
-              <p className="text-sm text-gray-600">
-                Ja sprzątam, Ty cieszysz się efektami
-              </p>
-            </div>
+            ))}
           </div>
 
           <div className="mt-8 pt-25 flex sm:flex-row flex-col items-center justify-end gap-4">
