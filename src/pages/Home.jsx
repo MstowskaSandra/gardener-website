@@ -9,6 +9,7 @@ import StepCard from "../components/StepCard";
 import ReviewCard from "../components/ReviewCard";
 import { reviews } from "../data/reviews";
 import { FcGoogle } from "react-icons/fc";
+import { cities } from "../data/cities";
 
 const Home = () => {
   return (
@@ -200,6 +201,60 @@ const Home = () => {
             Sprawdź nas w Google
             <FcGoogle className="text-lg " />
           </button>
+        </div>
+      </section>
+
+      <section className="bg-[#fafff4] py-16 px-12 lg:py-18 font-text">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="relative w-full aspect-4/3 lg:aspect-5/4 overflow-hidden">
+            <img
+              src="/assets/map.svg"
+              alt="Mapa"
+              className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-700 "
+            />
+          </div>
+
+          <div className="flex flex-col gap-2 font-mont">
+            <p className="text-orange-500 font-bold tracking-wide">
+              Gdzie działamy?
+            </p>
+            <h2 className="text-2xl lg:text-3xl font-mont font-extrabold text-green-800 tracking-wider pb-6">
+              Ogrodnik w Strzelinie i okolicach
+            </h2>
+            <p className="text-md pb-8">
+              Świadczymy kompleksowe usługi ogrodnicze w Strzelinie oraz
+              miejscowościach w promieniu ok 50 km. Obsługujemy zarówno prywatne
+              ogrody, jak i tereny zielone przy firmach.
+            </p>
+            {/* <div className=" border-4 border-green-800 shadow-lg rounded-4xl px-16 py-4 max-w-fit hover:scale-105 hover:shadow-2xl transition duration-700">
+              <ul className="grid grid-cols-2 gap-y-2 gap-x-8">
+                {cities.map((city) => (
+                  <li
+                    key={city}
+                    className="flex items-center justify-start gap-2 font-mont text-md text-green-800 font-semibold tracking-wide"
+                  >
+                    <span>✓</span>
+                    {city}
+                  </li>
+                ))}
+              </ul>
+            </div> */}
+            <div className="relative bg-[#ebe4d6] backdrop-blur-sm border border-gray-200 shadow-xl rounded-3xl px-12 py-6 max-w-fit hover:scale-[1.03] hover:shadow-2xl transition duration-500">
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-green-200 rounded-full blur-2xl opacity-50"></div>
+
+              <ul className="grid grid-cols-2 gap-y-2 gap-x-8">
+                {cities.map((city) => (
+                  <li
+                    key={city}
+                    className="flex items-center gap-3 text-green-900 font-medium tracking-wide transition duration-300 hover:translate-x-1 hover:text-green-700"
+                  >
+                    <span className="text-green-600 text-lg">✓</span>
+                    {city}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </>
