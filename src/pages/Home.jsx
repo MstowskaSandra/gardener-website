@@ -56,7 +56,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-[#fafff4] py-16 lg:py-24 font-text">
+      <section className="bg-[#fafff4] py-16 px-12 lg:py-24 font-text">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative w-full aspect-4/3 lg:aspect-5/4 overflow-hidden rounded-3xl shadow-2xl border-2 border-gray-300">
             <img
@@ -83,7 +83,7 @@ const Home = () => {
       </section>
 
       <section className="bg-[#ebe4d6] pt-16 pb-6 lg:pt-18 font-text">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+        <div className="max-w-7xl mx-auto px-16 lg:px-12 text-center">
           <p className="text-orange-500 font-bold mb-2 tracking-wide">
             Jak wygląda współpraca?
           </p>
@@ -136,8 +136,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-[#fafff4] pt-16 pb-8 lg:pt-20 font-text">
-        <div className="max-w-8xl mx-auto px-6 lg:px-10 text-center">
+      <section className="bg-[#fafff4] pt-16 pb-8 lg:pt-20 font-text px-12">
+        <div className="max-w-8xl mx-auto px-12 lg:px-10 text-center">
           <p className="text-orange-500 font-bold mb-2 tracking-wide">
             Nasze usługi
           </p>
