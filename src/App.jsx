@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/kontakt" element={<Contact />} />
         </Routes>
       </main>
+      <Footer />
     </BrowserRouter>
   );
 }

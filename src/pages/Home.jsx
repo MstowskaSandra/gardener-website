@@ -1,5 +1,6 @@
 import { MdOutlinePhoneCallback } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { features } from "../data/features";
 import FeatureCard from "../components/FeatureCard";
 import { servicesCards } from "../data/servicesCards";
@@ -152,13 +153,14 @@ const Home = () => {
               <ServiceCard key={service.title} {...service} />
             ))}
           </div>
-          <div className="flex justify-end  items-center gap-4 pt-30 pr-6 font-mont text-sm font-semibold text-green-800">
-            <p>
+          <div className="flex flex-col sm:flex-row items-center sm:items-center justify-end gap-4 pt-30 px-4 sm:px-0 font-mont text-sm font-semibold text-green-800 text-center sm:text-left">
+            <p className="max-w-xl">
               Nie znalazłeś usługi dla siebie? Skontaktuj się z nami, postaramy
-              się pomóc{" "}
+              się pomóc
             </p>
-            <button className="cursor-pointer flex items-center gap-2 bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
-              <MdOutlinePhoneCallback className="w-6 h-6" />
+
+            <button className="w-full sm:w-auto flex justify-center items-center gap-2 bg-green-800 text-white px-4 py-3 rounded-full hover:bg-green-700 transition">
+              <MdOutlinePhoneCallback className="w-5 h-5" />
               Zadzwoń
             </button>
           </div>
@@ -204,49 +206,39 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-[#fafff4] py-16 px-12 lg:py-18 font-text">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="relative w-full aspect-4/3 lg:aspect-5/4 overflow-hidden">
+      <section className="bg-[#FAFFF4] py-12 px-8 sm:px-12 lg:py-16 lg:px-12 font-text">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="relative w-full aspect-4/3 md:aspect-5/4 overflow-hidden rounded-2xl">
             <img
               src="/assets/map.svg"
               alt="Mapa"
-              className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-700 "
+              className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-700"
             />
           </div>
 
-          <div className="flex flex-col gap-2 font-mont">
+          <div className="flex flex-col gap-4 font-mont">
             <p className="text-orange-500 font-bold tracking-wide">
               Gdzie działamy?
             </p>
-            <h2 className="text-2xl lg:text-3xl font-mont font-extrabold text-green-800 tracking-wider pb-6">
+
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-green-800 tracking-wider">
               Ogrodnik w Strzelinie i okolicach
             </h2>
-            <p className="text-md pb-8">
+
+            <p className="text-sm sm:text-base pb-4">
               Świadczymy kompleksowe usługi ogrodnicze w Strzelinie oraz
               miejscowościach w promieniu ok 50 km. Obsługujemy zarówno prywatne
               ogrody, jak i tereny zielone przy firmach.
             </p>
-            {/* <div className=" border-4 border-green-800 shadow-lg rounded-4xl px-16 py-4 max-w-fit hover:scale-105 hover:shadow-2xl transition duration-700">
-              <ul className="grid grid-cols-2 gap-y-2 gap-x-8">
-                {cities.map((city) => (
-                  <li
-                    key={city}
-                    className="flex items-center justify-start gap-2 font-mont text-md text-green-800 font-semibold tracking-wide"
-                  >
-                    <span>✓</span>
-                    {city}
-                  </li>
-                ))}
-              </ul>
-            </div> */}
-            <div className="relative bg-[#ebe4d6] backdrop-blur-sm border border-gray-200 shadow-xl rounded-3xl px-12 py-6 max-w-fit hover:scale-[1.03] hover:shadow-2xl transition duration-500">
+
+            <div className="relative bg-[#ebe4d6] border border-gray-200 shadow-xl rounded-3xl px-6 sm:px-8 lg:px-12 py-6 max-w-full md:max-w-fit hover:scale-[1.03] hover:shadow-2xl transition duration-500">
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-green-200 rounded-full blur-2xl opacity-50"></div>
 
-              <ul className="grid grid-cols-2 gap-y-2 gap-x-8">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-8">
                 {cities.map((city) => (
                   <li
                     key={city}
-                    className="flex items-center gap-3 text-green-900 font-medium tracking-wide transition duration-300 hover:translate-x-1 hover:text-green-700"
+                    className="flex items-center gap-3 text-green-900 font-semibold tracking-wide transition duration-300 hover:translate-x-1 hover:text-green-700"
                   >
                     <span className="text-green-600 text-lg">✓</span>
                     {city}
@@ -254,6 +246,25 @@ const Home = () => {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto flex flex-row flex-wrap items-center justify-between gap-12 mt-12">
+          <button className="flex items-center gap-2 bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
+            <FaMapMarkerAlt className="w-5 h-5" />
+            Znajdź nas
+          </button>
+
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-green-800 font-mont text-sm font-semibold text-center md:text-left">
+            <p className="max-w-md">
+              Mieszkasz poza naszym zasięgiem? Daj znać, zobaczymy co da się
+              zrobić
+            </p>
+
+            <button className="flex items-center gap-2 bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
+              <MdOutlinePhoneCallback className="w-5 h-5" />
+              Zadzwoń
+            </button>
           </div>
         </div>
       </section>
