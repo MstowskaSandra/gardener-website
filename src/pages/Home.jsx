@@ -256,7 +256,7 @@ const Home = () => {
           </button>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 text-green-800 font-mont text-sm font-semibold text-center md:text-left">
-            <p className="max-w-md">
+            <p className="max-w-xl">
               Mieszkasz poza naszym zasięgiem? Daj znać, zobaczymy co da się
               zrobić
             </p>
