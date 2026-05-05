@@ -22,7 +22,7 @@ const Nav = () => {
             Owca Ogrody
           </div>
 
-          <div className="hidden lg:flex space-x-6 items-center uppercase font-text">
+          <div className="hidden lg:flex space-x-6 items-center uppercase font-mont font-bold text-sm">
             <Link
               to="/"
               className="text-gray-700 hover:text-green-700 transition-all duration-300"
@@ -66,11 +66,11 @@ const Nav = () => {
             <div className="flex flex-col items-end font-text">
               <a
                 href="tel:533615677"
-                className="text-black-700 font-semibold hover:underline"
+                className="text-black-700 font-mont font-bold text-sm hover:underline"
               >
                 533 615 677
               </a>
-              <span className="text-gray-600 text-sm">
+              <span className="text-gray-600 font-mont font-semibold text-xs">
                 Skontaktuj się z nami
               </span>
             </div>

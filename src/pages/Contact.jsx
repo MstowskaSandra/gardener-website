@@ -32,8 +32,8 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
           <div className="flex flex-col gap-6 text-green-900 order-2 lg:order-1">
-            <div>
-              <h2 className="text-3xl font-extrabold uppercase mb-6 tracking-tight">
+            <div className="border-b-2 border-green-900 mb-8">
+              <h2 className="text-xl font-extrabold uppercase mb-3 tracking-tight">
                 Skontaktuj się z nami
               </h2>
               <p className="text-gray-700 font-semibold mb-10 max-w-md text-sm leading-relaxed">
@@ -54,7 +54,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                     Zadzwoń do nas
                   </p>
                   <p className="text-xl font-extrabold">+48 123 456 789</p>
@@ -72,7 +72,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                     Napisz e-mail
                   </p>
                   <p className="text-xl font-extrabold text-wrap">
@@ -94,7 +94,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                     Znajdź nas
                   </p>
                   <p className="text-xl font-extrabold">
@@ -119,6 +119,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
+
           <ContactForm />
         </div>
       </div>

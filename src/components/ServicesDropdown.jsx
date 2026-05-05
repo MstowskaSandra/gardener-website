@@ -4,20 +4,31 @@ import { services } from "../data/services";
 function ServicesDropdown() {
   return (
     <div className="relative group">
-      <button className="text-gray-700 hover:text-green-700 transition-all duration-300 uppercase font-text font-semibold text-sm lg:text-base px-1 -m-1">
+      <button className="text-gray-700 hover:text-green-800 transition-all duration-300 uppercase font-mont font-bold text-xs lg:text-sm px-1 py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-green-700 after:transition-all after:duration-300 group-hover:after:w-full">
         Usługi
       </button>
 
-      <div className="absolute top-full left-1/2 -translate-x-1/2 w-56 bg-[#fafff4] border border-gray-200 rounded-xl shadow-xl py-2 z-[60] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-        {services.map((service) => (
-          <Link
-            key={service.slug}
-            to={`/uslugi/${service.slug}`}
-            className="block px-4 py-3 text-gray-700 hover:text-green-800 hover:bg-lime-100 font-text transition-all duration-300 rounded-lg mx-1"
-          >
-            {service.name}
-          </Link>
-        ))}
+      <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-60">
+        <div className="w-64 bg-white border-2 border-gray-200 rounded-3xl shadow-2xl py-3 relative translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+          <div className="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 bg-white rotate-45 border-l-[3px] border-t-[3px] border-gray-200"></div>
+
+          {services.map((service) => (
+            <Link
+              key={service.slug}
+              to={`/uslugi/${service.slug}`}
+              className="group/item block px-5 py-3.5 text-gray-700 hover:text-green-900 transition-all duration-200 mx-2 rounded-xl hover:bg-[#EBE4D6]/60"
+            >
+              <div className="flex items-center justify-between">
+                <span className="font-mont font-bold text-[11px] uppercase tracking-widest group-hover/item:translate-x-1 transition-transform">
+                  {service.name}
+                </span>
+                <span className="opacity-0 group-hover/item:opacity-100 text-green-700 font-black transition-all transform scale-125">
+                  →
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
