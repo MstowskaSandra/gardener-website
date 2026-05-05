@@ -14,7 +14,7 @@ const Nav = () => {
     }`;
 
   const activeBar =
-    "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-green-800 after:transition-all";
+    "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.75 after:bg-green-800 after:transition-all";
   const inactiveBar =
     "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-green-800 hover:after:w-full after:transition-all after:duration-300";
 
@@ -29,9 +29,12 @@ const Nav = () => {
 
       <nav className="sticky top-0 z-50 bg-[#fafff4] shadow-md">
         <div className="mx-auto px-4 py-4 sm:px-6 sm:py-4 lg:px-12 flex items-center justify-between">
-          <div className="text-xl sm:text-2xl lg:text-2xl font-candal font-bold uppercase text-black-700">
+          <NavLink
+            to="/"
+            className="text-xl sm:text-2xl lg:text-2xl font-candal font-bold uppercase text-black-700"
+          >
             Owca Ogrody
-          </div>
+          </NavLink>
 
           <div className="hidden lg:flex space-x-8 items-center">
             <NavLink
