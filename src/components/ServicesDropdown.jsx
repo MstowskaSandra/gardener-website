@@ -1,10 +1,20 @@
-import { Link } from "react-router-dom";
 import { services } from "../data/services";
+import { useLocation, Link } from "react-router-dom";
 
 function ServicesDropdown() {
+  const { pathname } = useLocation();
+  const isServicesActive = pathname.startsWith("/uslugi");
+
   return (
     <div className="relative group">
-      <button className="text-gray-700 hover:text-green-800 transition-all duration-300 uppercase font-mont font-bold text-xs lg:text-sm px-1 py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-green-700 after:transition-all after:duration-300 group-hover:after:w-full">
+      <button
+        className={`
+        uppercase font-mont font-bold text-xs lg:text-sm px-1 py-1 relative transition-all duration-300
+        ${isServicesActive ? "text-green-900" : "text-gray-700 hover:text-green-800"}
+        after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-green-800 after:transition-all after:duration-300
+        ${isServicesActive ? "after:w-full" : "after:w-0 group-hover:after:w-full"}
+      `}
+      >
         Usługi
       </button>
 

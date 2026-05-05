@@ -3,9 +3,20 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
 import ServicesDropdown from "./ServicesDropdown";
 import { services } from "../data/services";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navLinkStyles = ({ isActive }) =>
+    `relative pb-1 transition-all duration-300 uppercase font-mont font-bold text-sm tracking-wide ${
+      isActive ? "text-green-900" : "text-gray-700 hover:text-green-800"
+    }`;
+
+  const activeBar =
+    "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-green-800 after:transition-all";
+  const inactiveBar =
+    "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-green-800 hover:after:w-full after:transition-all after:duration-300";
 
   return (
     <>
@@ -22,26 +33,35 @@ const Nav = () => {
             Owca Ogrody
           </div>
 
-          <div className="hidden lg:flex space-x-6 items-center uppercase font-mont font-bold text-sm">
-            <Link
+          <div className="hidden lg:flex space-x-8 items-center">
+            <NavLink
               to="/"
-              className="text-gray-700 hover:text-green-700 transition-all duration-300"
+              className={({ isActive }) =>
+                `${navLinkStyles({ isActive })} ${isActive ? activeBar : inactiveBar}`
+              }
             >
               Strona Główna
-            </Link>
+            </NavLink>
+
             <ServicesDropdown />
-            <Link
+
+            <NavLink
               to="/galeria"
-              className="text-gray-700 hover:text-green-700 transition-all duration-300"
+              className={({ isActive }) =>
+                `${navLinkStyles({ isActive })} ${isActive ? activeBar : inactiveBar}`
+              }
             >
               Galeria
-            </Link>
-            <Link
+            </NavLink>
+
+            <NavLink
               to="/kontakt"
-              className="text-gray-700 hover:text-green-700 transition-all duration-300"
+              className={({ isActive }) =>
+                `${navLinkStyles({ isActive })} ${isActive ? activeBar : inactiveBar}`
+              }
             >
               Kontakt
-            </Link>
+            </NavLink>
           </div>
 
           <div className="hidden md:flex items-center gap-6">
