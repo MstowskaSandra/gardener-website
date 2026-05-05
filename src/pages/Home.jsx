@@ -11,6 +11,7 @@ import ReviewCard from "../components/ReviewCard";
 import { reviews } from "../data/reviews";
 import { FcGoogle } from "react-icons/fc";
 import { cities } from "../data/cities";
+import CallButton from "../components/CallButton";
 
 const Home = () => {
   return (
@@ -116,11 +117,7 @@ const Home = () => {
             <p className="text-gray-700 font-semibold flex gap-2 items-center text-md ">
               Masz pytania? Skontaktuj się z nami
             </p>
-
-            <button className="ml-4 cursor-pointer flex items-center gap-2 bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
-              <MdOutlinePhoneCallback className="w-6 h-6" />
-              Zadzwoń
-            </button>
+            <CallButton />
           </div>
         </div>
       </section>
@@ -159,10 +156,7 @@ const Home = () => {
               się pomóc
             </p>
 
-            <button className="w-full sm:w-auto flex justify-center items-center gap-2 bg-green-800 text-white px-4 py-3 rounded-full hover:bg-green-700 transition">
-              <MdOutlinePhoneCallback className="w-5 h-5" />
-              Zadzwoń
-            </button>
+            <CallButton />
           </div>
         </div>
       </section>
@@ -250,10 +244,15 @@ const Home = () => {
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-row flex-wrap items-center justify-between gap-12 mt-12">
-          <button className="flex items-center gap-2 bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
+          <a
+            href="https://maps.app.goo.gl/1YNFGqNLspPWdPC46"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer flex items-center gap-2 bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-700 transition w-fit font-mont font-bold text-sm"
+          >
             <FaMapMarkerAlt className="w-5 h-5" />
             Znajdź nas
-          </button>
+          </a>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 text-green-800 font-mont text-sm font-semibold text-center md:text-left">
             <p className="max-w-xl">
@@ -261,10 +260,7 @@ const Home = () => {
               zrobić
             </p>
 
-            <button className="flex items-center gap-2 bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
-              <MdOutlinePhoneCallback className="w-5 h-5" />
-              Zadzwoń
-            </button>
+            <CallButton />
           </div>
         </div>
       </section>
