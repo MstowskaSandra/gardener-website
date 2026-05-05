@@ -132,7 +132,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-white/40"></div>
 
         <div className="relative z-10 flex h-full items-center justify-center">
-          <h2 className="font-candal px-4 md:px-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#fafff4] tracking-wider drop-shadow-lg">
+          <h2 className="font-mont px-4 md:px-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#fafff4] tracking-widest drop-shadow-lg">
             Dbamy o szczegóły.
           </h2>
         </div>
