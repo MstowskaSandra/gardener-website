@@ -1,5 +1,5 @@
-import ServiceHero from "../../components/ServiceHero";
-import ServiceInfoSection from "../../components/ServiceInfoSection";
+import ServiceHero from "../../components/services/ServiceHero";
+import ServiceInfoSection from "../../components/services/ServiceInfoSection";
 
 export const LawnCare = () => {
   return (

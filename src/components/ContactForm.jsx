@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { validateForm } from "../utils/validation";
-import Reveal from "./Reveal";
+import Reveal from "./ui/Reveal";
 
 export const ContactForm = () => {
   const formRef = useRef();

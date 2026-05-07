@@ -7,7 +7,7 @@ import {
 } from "react-icons/md";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import ContactForm from "../components/ContactForm";
-import Reveal from "../components/Reveal";
+import Reveal from "../components/ui/Reveal";
 
 const Contact = () => {
   return (
