@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { IoMdCheckmark } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const ServiceCard = ({
   icon: Icon,
@@ -8,6 +9,7 @@ const ServiceCard = ({
   buttonText,
   link,
   variant,
+  delay = 0,
 }) => {
   const headerStyles =
     variant === "alt"
@@ -15,21 +17,37 @@ const ServiceCard = ({
       : "bg-lime-400 text-green-900";
 
   return (
-    <div className="flex-1 min-w-55 max-w-70 h-80 bg-[#fafff4] rounded-3xl border border-gray-300 shadow-lg flex flex-col justify-between overflow-hidden hover:scale-[1.1] hover:shadow-2xl transition-transform">
-    
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.5,
+        delay: delay,
+        ease: "easeOut",
+      }}
+      className="flex-1 min-w-55 max-w-70 h-80 bg-[#fafff4] rounded-3xl border border-gray-300 shadow-lg flex flex-col justify-between overflow-hidden hover:scale-[1.1] hover:shadow-2xl transition-transform"
+    >
       <div className="pb-3">
-        <div className={`flex items-center justify-center gap-2  px-2 py-4 rounded-full ${headerStyles}`}>
-            <Icon className="text-base sm:text-lg lg:text-xl shrink-0" />
-            <h3 className="text-sm sm:text-sm lg:text-base font-bold text-center leading-tight">
+        <div
+          className={`flex items-center justify-center gap-2 px-2 py-4 rounded-full ${headerStyles}`}
+        >
+          <Icon className="text-base sm:text-lg lg:text-xl shrink-0" />
+          <h3 className="text-sm sm:text-sm lg:text-base font-bold text-center leading-tight">
             {title}
-            </h3>
+          </h3>
         </div>
       </div>
 
       <ul className="space-y-4 px-6 py-2 text-left">
         {items?.map((item, index) => (
-          <li key={index} className="flex gap-2 text-sm font-semibold text-green-900 items-center">
-            <span className="text-green-700 text-lg"><IoMdCheckmark /></span>
+          <li
+            key={index}
+            className="flex gap-2 text-sm font-semibold text-green-900 items-center"
+          >
+            <span className="text-green-700 text-lg">
+              <IoMdCheckmark />
+            </span>
             {item}
           </li>
         ))}
@@ -43,7 +61,7 @@ const ServiceCard = ({
           {buttonText}
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
