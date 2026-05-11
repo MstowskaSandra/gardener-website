@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { validateForm } from "../utils/validation";
 import Reveal from "./ui/Reveal";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 export const ContactForm = () => {
   const formRef = useRef();
@@ -37,13 +38,19 @@ export const ContactForm = () => {
         )
         .then(
           (result) => {
-            console.log("Sukces!", result.text);
-            alert("Wiadomość została wysłana pomyślnie!");
+            console.log("EmailJS Success:", result.text);
+            toast.success("Wiadomość wysłana!", {
+              duration: 4000,
+              style: {
+                background: "white",
+                color: "#016630",
+              },
+            });
             formRef.current.reset();
           },
           (error) => {
-            console.log("Błąd...", error.text);
-            alert("Coś poszło nie tak. Spróbuj zadzwonić bezpośrednio.");
+            console.error("EmailJS Error:", error);
+            toast.error("Coś poszło nie tak. Spróbuj ponownie.");
           },
         )
         .finally(() => {

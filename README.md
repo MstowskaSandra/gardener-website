@@ -1,16 +1,35 @@
-# React + Vite
+# 🌿 Modern Gardener Service Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, high-performance service website designed for a gardening business. Built with **React**, **Vite**, and **Tailwind CSS**, featuring smooth animations and a fully functional contact system.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Contact System**: Fully validated contact form integrated with **EmailJS** for direct client communication.
+- **Interactive Elements**:
+  - Scroll-triggered animations using **Framer Motion**.
+  - Optimized image gallery with staggered reveal effects.
+  - Reusable components (Buttons, Cards, Reveal wrappers).
+  - **Modern UI/UX**: Responsive design with a nature-inspired color palette and polished typography.
+- **Dynamic Navigation**: Custom `ScrollToTop` utility for seamless SPA transitions.
+- **Performance**: Built with **Vite** for lightning-fast development and optimized production builds.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React 18, Tailwind CSS, Framer Motion
+- **Icons:** React Icons
+- **Form Handling:** EmailJS, Custom Validation Utils
+- **Routing:** React Router DOM
+- **Build Tool:** Vite
 
-## Expanding the ESLint configuration
+## 🎨 From Design to Code
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project followed a complete development lifecycle:
+1. **Design Phase**: I personally designed the entire UI/UX in **Canva**, focusing on a modern, "organic" aesthetic that reflects the gardening industry.
+2. **Development**: I translated the high-fidelity designs into a pixel-perfect React application, ensuring all layouts remained faithful to the original vision.
+
+## 📝 Form Architecture & Logic
+
+- **Uncontrolled Components**: Used `useRef` and `FormData` for efficient data handling without unnecessary re-renders.
+- **Seamless Validation**: Logic-driven validation that checks the entire form upon submission to ensure a distraction-free user experience.
+- **EmailJS Integration**: Direct frontend-to-email integration with custom success/error handling and submission loading states.
+
