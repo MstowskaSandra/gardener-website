@@ -17,7 +17,7 @@ export const LawnCare = () => {
         title="Kompleksowa pielęgnacja 
   trawnika"
         text="Zadbany trawnik to wizytówka każdego ogrodu. Oferujemy kompleksową pielęgnację trawników — od regularnego koszenia po profesjonalne zabiegi regeneracyjne."
-        image="/assets/LawnCare-5.svg"
+        image="/assets/LawnCare-5.webp"
       />
       <ServiceInfoSection
         title="Koszenie trawy"
@@ -29,7 +29,7 @@ export const LawnCare = () => {
           "koszenie terenów przy firmach (wystawiamy fakturę)",
           "estetyczne wykończenie krawędzi trawnika",
         ]}
-        image="/assets/LawnCare-1.svg"
+        image="/assets/LawnCare-1.webp"
         reverse={false}
       />
       <ServiceInfoSection
@@ -42,7 +42,7 @@ Wertykulacja polega na nacinaniu darni i usuwaniu warstwy filcu, która utrudnia
           "koszenie dużych powierzchni",
           " zdrowszy i gęstszy trawnik",
         ]}
-        image="/assets/LawnCare-2.svg"
+        image="/assets/LawnCare-2.webp"
         reverse={true}
       />
       <ServiceInfoSection
@@ -55,7 +55,7 @@ Aeracja polega na nakłuwaniu gleby w celu poprawy napowietrzenia i przepuszczal
           "lepsze wchłanianie wody",
           " mocniejszy system korzeniowy",
         ]}
-        image="/assets/LawnCare-3.svg"
+        image="/assets/LawnCare-3.webp"
         reverse={false}
       />
       <ServiceInfoSection
@@ -68,7 +68,7 @@ Odpowiednio dobrane nawozy dostarczają trawie niezbędnych składników odżywc
           "gęsty i odporny trawnik",
           "szybsza regeneracja",
         ]}
-        image="/assets/LawnCare-4.svg"
+        image="/assets/LawnCare-4.webp"
         reverse={true}
       />
       <ServiceInfoSection
@@ -82,7 +82,7 @@ Piaskowanie polega na rozsypaniu cienkiej warstwy piasku na trawniku, co poprawi
           "wyrównanie powierzchni trawnika",
           "lepsze warunki wzrostu trawy",
         ]}
-        image="/assets/LawnCare-hero.svg"
+        image="/assets/LawnCare-hero.webp"
         reverse={false}
       />
 
