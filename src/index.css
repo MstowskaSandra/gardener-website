@@ -10,3 +10,9 @@
   .font-text { font-family: 'Open Sans', sans-serif; }
 }
 
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
