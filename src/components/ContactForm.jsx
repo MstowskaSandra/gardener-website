@@ -1,10 +1,12 @@
 import { useRef, useState } from "react";
 import { validateForm } from "../utils/validation";
 import Reveal from "./ui/Reveal";
+import emailjs from "@emailjs/browser";
 
 export const ContactForm = () => {
   const formRef = useRef();
   const [errors, setErrors] = useState({});
+  const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,9 +26,29 @@ export const ContactForm = () => {
       setErrors(validationErrors);
     } else {
       setErrors({});
-      console.log("Formularz gotowy do wysyłki EmailJS:", data);
-      alert("Wysłano!");
-      formRef.current.reset();
+      setIsSending(true);
+
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        )
+        .then(
+          (result) => {
+            console.log("Sukces!", result.text);
+            alert("Wiadomość została wysłana pomyślnie!");
+            formRef.current.reset();
+          },
+          (error) => {
+            console.log("Błąd...", error.text);
+            alert("Coś poszło nie tak. Spróbuj zadzwonić bezpośrednio.");
+          },
+        )
+        .finally(() => {
+          setIsSending(false);
+        });
     }
   };
 
@@ -137,9 +159,11 @@ export const ContactForm = () => {
           <div className="flex justify-center pt-4">
             <button
               type="submit"
-              className="cursor-pointer w-full sm:w-auto bg-green-800 text-white font-black text-[10px] uppercase tracking-[0.2em] px-14 py-4 rounded-xl shadow-xl hover:bg-orange-500 hover:-translate-y-1 transition-all duration-300"
+              disabled={isSending}
+              className={`cursor-pointer w-full sm:w-auto bg-green-800 text-white font-black text-[10px] uppercase tracking-[0.2em] px-14 py-4 rounded-xl shadow-xl transition-all duration-300
+        ${isSending ? "opacity-50 cursor-not-allowed" : "hover:bg-orange-500 hover:-translate-y-1"}`}
             >
-              Wyślij zapytanie
+              {isSending ? "Wysyłanie..." : "Wyślij zapytanie"}
             </button>
           </div>
         </form>
