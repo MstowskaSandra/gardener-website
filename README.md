@@ -10,6 +10,7 @@ A professional, high-performance service website designed for a gardening busine
   - Optimized image gallery with staggered reveal effects.
   - Reusable components (Buttons, Cards, Reveal wrappers).
   - **Modern UI/UX**: Responsive design with a nature-inspired color palette and polished typography.
+  - **User Feedback**: Integrated **react-hot-toast** for non-blocking, stylish notifications during form submission.
 - **Dynamic Navigation**: Custom `ScrollToTop` utility for seamless SPA transitions.
 - **Performance**: Built with **Vite** for lightning-fast development and optimized production builds.
 
@@ -18,6 +19,7 @@ A professional, high-performance service website designed for a gardening busine
 - **Frontend:** React 18, Tailwind CSS, Framer Motion
 - **Icons:** React Icons
 - **Form Handling:** EmailJS, Custom Validation Utils
+- **Notifications:** react-hot-toast
 - **Routing:** React Router DOM
 - **Build Tool:** Vite
 
