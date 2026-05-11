@@ -27,7 +27,7 @@ const GardenGallery = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {images.map((image, index) => (
-            <Reveal key={image.id} delay={index * 0.1} width="100%">
+            <Reveal key={image.id} delay={(index % 4) * 0.25} width="100%">
               <div
                 key={image.id}
                 className="group relative aspect-square overflow-hidden rounded-[2.5rem] border-2 border-gray-300 shadow-md hover:border-green-700 hover:shadow-2xl transition-all duration-500 bg-white"
@@ -48,7 +48,7 @@ const GardenGallery = () => {
           ))}
         </div>
 
-        <Reveal delay={0.8} width="100%" className="mx-auto max-w-3xl">
+        <Reveal delay={0.4} width="100%" className="mx-auto max-w-3xl">
           <div className="mt-16 bg-[#FAFFF4] backdrop-blur-md py-6 px-8 rounded-4xl border-2 border-green-800/20 flex flex-col items-center justify-center gap-4 shadow-sm">
             <div className="flex flex-col sm:flex-row items-center gap-2 text-center">
               <p className="font-mont text-md font-bold text-green-900">
