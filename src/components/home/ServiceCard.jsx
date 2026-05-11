@@ -55,7 +55,7 @@ const ServiceCard = ({
 
       <div className="flex justify-end pr-6 pb-4">
         <Link
-          to={link}
+          to={`/uslugi/${link}`}
           className="bg-orange-500 text-white px-4 py-1.5 rounded-full text-xs font-semibold hover:bg-orange-600 transition"
         >
           {buttonText}

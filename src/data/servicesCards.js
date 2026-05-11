@@ -7,25 +7,19 @@ import {
 } from "react-icons/fa";
 
 export const servicesCards = [
-    {
+  {
     title: "Pielęgnacja trawników",
     icon: FaSeedling,
     buttonText: "Zobacz",
-    link: "/uslugi/pielegnacja-trawnikow",
+    link: "pielegnacja-trawnikow",
     variant: "alt",
-    items: [
-      "Koszenie",
-      "Wertykulacja",
-      "Aeracja",
-      "Piaskowanie",
-      "Nawożenie", 
-    ],
+    items: ["Koszenie", "Wertykulacja", "Aeracja", "Piaskowanie", "Nawożenie"],
   },
   {
     title: "Pielęgnacja ogrodów",
     icon: FaLeaf,
     buttonText: "Zobacz",
-    link: "/uslugi/pielegnacja-ogrodow",
+    link: "pielegnacja-ogrodow",
     variant: "default",
     items: [
       "Formowanie żywopłotów",
@@ -37,19 +31,15 @@ export const servicesCards = [
     title: "Wycinka drzew",
     icon: FaTree,
     buttonText: "Zobacz",
-    link: "/uslugi/wycinka-drzew",
+    link: "wycinka-drzew",
     variant: "alt",
-    items: [
-      "Wycinka tradycyjna",
-      "Wycinka alpinistyczna",
-      "Przycinanie drzew",
-    ],
+    items: ["Wycinka tradycyjna", "Wycinka alpinistyczna", "Przycinanie drzew"],
   },
   {
     title: "Sprzątanie ogrodów",
     icon: FaBroom,
     buttonText: "Zobacz",
-    link: "/uslugi/sprzatanie-ogrodow",
+    link: "sprzatanie-ogrodow",
     variant: "default",
     items: [
       "Porządkowanie działek",
@@ -62,7 +52,7 @@ export const servicesCards = [
     title: "Opryski",
     icon: FaBug,
     buttonText: "Zobacz",
-    link: "/uslugi/opryski",
+    link: "opryski",
     variant: "alt",
     items: [
       "Opryski drzew i krzewów",

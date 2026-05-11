@@ -64,11 +64,12 @@ export const LocationArea = () => (
       </a>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 text-green-800 font-mont text-sm font-semibold text-center md:text-left">
-        <p className="max-w-xl">
-          Mieszkasz poza naszym zasięgiem? Daj znać, zobaczymy co da się zrobić
-        </p>
+        <span className="text-orange-500 font-bold text-md">
+          Mieszkasz poza naszym zasięgiem?
+        </span>
+        <p className="max-w-xl">Daj znać, zobaczymy co da się zrobić</p>
 
-        <CallButton />
+        <CallButton variant="orange" text="Zadzwoń" />
       </div>
     </div>
   </section>

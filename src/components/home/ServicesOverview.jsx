@@ -3,7 +3,10 @@ import ServiceCard from "./ServiceCard";
 import CallButton from "../ui/CallButton";
 
 export const ServicesOverview = () => (
-  <section className="bg-[#fafff4] pt-16 pb-8 lg:pt-20 font-text px-12">
+  <section
+    id="services-overview"
+    className="bg-[#fafff4] pt-16 pb-8 lg:pt-20 font-text px-12"
+  >
     <div className="max-w-8xl mx-auto px-12 lg:px-10 text-center">
       <p className="text-orange-500 font-bold mb-2 tracking-wide">
         Nasze usługi
@@ -19,12 +22,12 @@ export const ServicesOverview = () => (
         ))}
       </div>
       <div className="flex flex-col sm:flex-row items-center sm:items-center justify-end gap-4 pt-30 px-4 sm:px-0 font-mont text-sm font-semibold text-green-800 text-center sm:text-left">
-        <p className="max-w-xl">
-          Nie znalazłeś usługi dla siebie? Skontaktuj się z nami, postaramy się
-          pomóc
-        </p>
+        <span className="text-orange-500 font-bold text-md">
+          Nie znalazłeś usługi dla siebie?
+        </span>
+        <p className="max-w-xl">Skontaktuj się z nami, postaramy się pomóc</p>
 
-        <CallButton />
+        <CallButton variant="green" text="Zadzwoń" />
       </div>
     </div>
   </section>

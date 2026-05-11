@@ -48,13 +48,19 @@ export const Hero = () => (
           transition={{ duration: 0.8, delay: 0.5 }}
           className="flex gap-4 sm:gap-6 lg:gap-8 mt-10 lg:mt-20 justify-center lg:justify-start flex-wrap"
         >
-          <button className="bg-green-800 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-green-900 transition hover:scale-105 active:scale-95 cursor-pointer">
+          <a
+            href="#services-overview"
+            className="bg-green-800 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-green-900 transition hover:scale-105 active:scale-95 cursor-pointer"
+          >
             Nasze Usługi
-          </button>
+          </a>
 
-          <button className="bg-orange-500 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-orange-600 transition hover:scale-105 active:scale-95 cursor-pointer">
+          <a
+            href="tel:+48533615677"
+            className="bg-orange-500 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-orange-600 transition hover:scale-105 active:scale-95 cursor-pointer"
+          >
             Zadzwoń teraz
-          </button>
+          </a>
         </motion.div>
       </div>
     </div>

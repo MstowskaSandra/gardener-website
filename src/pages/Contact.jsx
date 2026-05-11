@@ -108,13 +108,17 @@ const Contact = () => {
 
               <div className="flex gap-4 pt-6">
                 <a
-                  href="#"
+                  href="https://facebook.com/people/Owca-Ogrody/100087780861997/#"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-green-800 p-4 rounded-2xl text-white hover:bg-orange-500 transition-all shadow-lg hover:-translate-y-1"
                 >
                   <FaFacebook size={24} />
                 </a>
                 <a
-                  href="#"
+                  href="https://instagram.com/owca.ogrody/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-green-800 p-4 rounded-2xl text-white hover:bg-orange-500 transition-all shadow-lg hover:-translate-y-1"
                 >
                   <FaInstagram size={24} />

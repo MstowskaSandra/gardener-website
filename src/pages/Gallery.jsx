@@ -61,7 +61,7 @@ const GardenGallery = () => {
 
             <div className="flex items-center gap-6 text-green-800">
               <a
-                href="https://www.facebook.com/"
+                href="https://facebook.com/people/Owca-Ogrody/100087780861997/#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-120 hover:text-[#1877F2] transition-all duration-300"
@@ -69,7 +69,7 @@ const GardenGallery = () => {
                 <FaFacebook size={28} />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://instagram.com/owca.ogrody/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-120 hover:text-[#E4405F] transition-all duration-300"

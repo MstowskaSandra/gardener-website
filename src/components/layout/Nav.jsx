@@ -70,7 +70,7 @@ const Nav = () => {
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/people/Owca-Ogrody/100087780861997/#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:scale-110 transition-transform"
@@ -78,7 +78,7 @@ const Nav = () => {
                 <FaFacebook size={24} />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://instagram.com/owca.ogrody/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:scale-110 transition-transform"
