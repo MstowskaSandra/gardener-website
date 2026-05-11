@@ -88,9 +88,19 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center text-xs font-semibold text-white/70 py-4 px-6">
-        Strona i jej treść jest własnością firmy Owca Ogrody | Prawa autorskie
-        Sandra Mstowska
+      <div className="text-center text-xs font-semibold text-white/70 py-4 px-6 leading-relaxed">
+        <p>
+          © {new Date().getFullYear()} Owca Ogrody. Wszelkie prawa zastrzeżone.
+        </p>
+        <p className="mt-1 opacity-80">
+          Projekt i realizacja:{" "}
+          <a
+            href="https://www.linkedin.com/in/sandra-mstowska-962368376/"
+            className="text-white transition hover:translate-x-1 inline-block hover:text-orange-500"
+          >
+            Sandra Mstowska
+          </a>
+        </p>
       </div>
     </footer>
   );
