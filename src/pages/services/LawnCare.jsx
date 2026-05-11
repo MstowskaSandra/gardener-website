@@ -1,10 +1,18 @@
 import ServicesOverview from "../../components/home/ServicesOverview";
 import ServiceHero from "../../components/services/ServiceHero";
 import ServiceInfoSection from "../../components/services/ServiceInfoSection";
+import { Helmet } from "react-helmet-async";
 
 export const LawnCare = () => {
   return (
     <>
+      <Helmet>
+        <title>Pielęgnacja Trawników | OwcaOgrody</title>
+        <meta
+          name="description"
+          content="Profesjonalna regeneracja i pielęgnacja trawników. Koszenie, wertykulacja i nawożenie. Spraw, by Twój trawnik był idealnie zielony!"
+        />
+      </Helmet>
       <ServiceHero
         title="Kompleksowa pielęgnacja 
   trawnika"

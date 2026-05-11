@@ -1,10 +1,19 @@
 import ServicesOverview from "../../components/home/ServicesOverview";
 import ServiceHero from "../../components/services/ServiceHero";
 import ServiceInfoSection from "../../components/services/ServiceInfoSection";
+import { Helmet } from "react-helmet-async";
 
 export const GardenCare = () => {
   return (
     <>
+      <Helmet>
+        <title>Pielęgnacja Ogrodów Strzelin | OwcaOgrody</title>
+        <meta
+          name="description"
+          content="Profesjonalna pielęgnacja ogrodów prywatnych, firmowych oraz terenów zielonych. Formowanie żywopłotów, przycinanie krzewów, pielęgnacja roślin ozdobnych."
+        />
+      </Helmet>
+
       <ServiceHero
         title="Kompleksowa pielęgnacja ogrodów"
         text="Zadbany ogród to wizytówka każdej posesji. Oferujemy profesjonalną pielęgnację ogrodów prywatnych, firmowych oraz terenów zielonych – od regularnych prac porządkowych po specjalistyczne zabiegi pielęgnacyjne roślin."

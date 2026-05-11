@@ -1,10 +1,19 @@
 import ServicesOverview from "../../components/home/ServicesOverview";
 import ServiceHero from "../../components/services/ServiceHero";
 import ServiceInfoSection from "../../components/services/ServiceInfoSection";
+import { Helmet } from "react-helmet-async";
 
 export const GardenCleaning = () => {
   return (
     <>
+      <Helmet>
+        <title>Sprzątanie Ogrodów i Wywóz Odpadów | OwcaOgrody</title>
+        <meta
+          name="description"
+          content="Twoje podwórko potrzebuje porządku? Zadbamy o Twój ogród w Strzelinie i okolicznych miejscowościach. Oferujemy sprzątanie po sezonie, grabienie liści i przygotowanie ogrodu do zimy."
+        />
+      </Helmet>
+
       <ServiceHero
         title="Kompleksowe sprzątanie ogrodów"
         text="Uporządkowany ogród to estetyczna i funkcjonalna przestrzeń przez cały rok. Oferujemy profesjonalne sprzątanie ogrodów, działek oraz terenów zielonych – sezonowo i jednorazowo."

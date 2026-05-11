@@ -1,10 +1,19 @@
 import ServicesOverview from "../../components/home/ServicesOverview";
 import ServiceHero from "../../components/services/ServiceHero";
 import ServiceInfoSection from "../../components/services/ServiceInfoSection";
+import { Helmet } from "react-helmet-async";
 
 export const Sprays = () => {
   return (
     <>
+      <Helmet>
+        <title>Opryski i Ochrona Roślin | OwcaOgrody</title>
+        <meta
+          name="description"
+          content="Skuteczna walka ze szkodnikami i chorobami roślin. Profesjonalne opryski ochronne, które uratują Twoją roślinność."
+        />
+      </Helmet>
+
       <ServiceHero
         title="Opryski drzew i krzewów"
         text="Chronimy rośliny przed chorobami i szkodnikami. Wykonujemy profesjonalne opryski drzew i krzewów, dobierając odpowiednie środki i metody, aby zapewnić skuteczną i bezpieczną ochronę Twojego ogrodu."

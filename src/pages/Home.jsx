@@ -7,10 +7,18 @@ import ReviewSection from "../components/home/ReviewSection";
 import LocationArea from "../components/home/LocationArea";
 import MidBanner from "../components/MidBanner";
 import LargeBanner from "../components/LargeBanner";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
-    <>
+    <main>
+      <Helmet>
+        <title>OwcaOgrody | Profesjonalne Usługi Ogrodnicze</title>
+        <meta
+          name="description"
+          content="Twój wymarzony ogród w zasięgu ręki. Zajmujemy się pielęgnacją ogrodu, trawnika, wycinką drzew i koszeniem. Sprawdź naszą ofertę!"
+        />
+      </Helmet>
       <Hero />
       <AboutFeatures />
       <WorkProcess />
@@ -29,7 +37,7 @@ const Home = () => {
         text="Można na Nas liczyć."
       />
       <LocationArea />
-    </>
+    </main>
   );
 };
 

@@ -11,30 +11,39 @@ import TreeCare from "./pages/services/TreeCare";
 import GardenCleaning from "./pages/services/GardenCleaning";
 import Sprays from "./pages/services/Sprays";
 import ScrollToTop from "./utils/ScrollToTop";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Toaster position="top-right" reverseOrder={false} />
-      <ScrollToTop />
-      <Nav />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/galeria" element={<Gallery />} />
-          <Route path="/kontakt" element={<Contact />} />
-          <Route path="/uslugi/pielegnacja-ogrodow" element={<GardenCare />} />
-          <Route path="/uslugi/pielegnacja-trawnikow" element={<LawnCare />} />
-          <Route path="/uslugi/wycinka-drzew" element={<TreeCare />} />
-          <Route
-            path="/uslugi/sprzatanie-ogrodow"
-            element={<GardenCleaning />}
-          />
-          <Route path="/uslugi/opryski" element={<Sprays />} />
-        </Routes>
-      </main>
-      <Footer />
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Toaster position="top-right" reverseOrder={false} />
+        <ScrollToTop />
+        <Nav />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/galeria" element={<Gallery />} />
+            <Route path="/kontakt" element={<Contact />} />
+            <Route
+              path="/uslugi/pielegnacja-ogrodow"
+              element={<GardenCare />}
+            />
+            <Route
+              path="/uslugi/pielegnacja-trawnikow"
+              element={<LawnCare />}
+            />
+            <Route path="/uslugi/wycinka-drzew" element={<TreeCare />} />
+            <Route
+              path="/uslugi/sprzatanie-ogrodow"
+              element={<GardenCleaning />}
+            />
+            <Route path="/uslugi/opryski" element={<Sprays />} />
+          </Routes>
+        </main>
+        <Footer />
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 

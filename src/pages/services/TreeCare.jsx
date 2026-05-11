@@ -1,10 +1,19 @@
 import ServicesOverview from "../../components/home/ServicesOverview";
 import ServiceHero from "../../components/services/ServiceHero";
 import ServiceInfoSection from "../../components/services/ServiceInfoSection";
+import { Helmet } from "react-helmet-async";
 
 export const TreeRemoval = () => {
   return (
     <>
+      <Helmet>
+        <title>Wycinka Drzew | OwcaOgrody</title>
+        <meta
+          name="description"
+          content="Profesjonalna wycinka drzew klasyczna oraz alpinistyczna wycinka drzew na terenie powiatu strzelińskiego. Bezpieczne i sprawne usługi arborystyczne w Twoim ogrodzie. Usługi rębakiem."
+        />
+      </Helmet>
+
       <ServiceHero
         title="Wycinka i pielęgnacja drzew"
         text="Oferujemy profesjonalną wycinkę drzew oraz prace pielęgnacyjne na posesjach prywatnych, działkach i terenach firmowych. Działamy sprawnie, bezpiecznie i z dbałością o otoczenie."
