@@ -2,6 +2,7 @@ import React from "react";
 import images from "../data/images";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import Reveal from "../components/ui/Reveal";
+import ServicesOverview from "../components/home/ServicesOverview";
 
 const GardenGallery = () => {
   return (

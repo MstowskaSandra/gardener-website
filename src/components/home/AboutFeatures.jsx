@@ -30,7 +30,7 @@ export const AboutFeatures = () => (
 
         <div className="flex flex-col py-12 gap-6 items-center">
           {features.map((item, index) => (
-            <Reveal key={item.title} delay={0.4 + index * 0.3} width="100%">
+            <Reveal key={item.title} delay={0.4 + index * 0.2} width="100%">
               <FeatureCard {...item} />
             </Reveal>
           ))}
