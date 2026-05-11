@@ -48,7 +48,7 @@ This project followed a complete development lifecycle:
 
 This is a **commercial project** designed, developed, and successfully deployed for a professional gardening company. It is currently in active use, serving as the primary point of contact for clients in the Strzelin area and effectively supporting the business's online presence and growth.
 
-##🤝 Let’s Connect
+## 🤝 Let’s Connect
 
 If you are interested in this project or would like to discuss my experience,
 feel free to contact me.
