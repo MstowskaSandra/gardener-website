@@ -9,10 +9,12 @@ import LawnCare from "./pages/services/LawnCare";
 import TreeCare from "./pages/services/TreeCare";
 import GardenCleaning from "./pages/services/GardenCleaning";
 import Sprays from "./pages/services/Sprays";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Nav />
       <main>
         <Routes>
