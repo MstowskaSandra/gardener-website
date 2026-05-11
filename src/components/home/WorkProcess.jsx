@@ -38,7 +38,7 @@ export const WorkProcess = () => (
         ))}
       </div>
 
-      <Reveal delay={2.2} width="100%">
+      <Reveal delay={1.4} width="100%">
         <div className="pt-25 pb-8 flex sm:flex-row flex-col items-center justify-end gap-2">
           <span className="text-orange-500 font-bold text-md">
             Darmowa konsultacja.

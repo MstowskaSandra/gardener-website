@@ -1,3 +1,4 @@
+import ServicesOverview from "../../components/home/ServicesOverview";
 import ServiceHero from "../../components/services/ServiceHero";
 import ServiceInfoSection from "../../components/services/ServiceInfoSection";
 
@@ -51,6 +52,8 @@ export const GardenCare = () => {
         image="/assets/GardenCare-3.svg"
         reverse={false}
       />
+
+      <ServicesOverview />
     </>
   );
 };

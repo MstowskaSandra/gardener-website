@@ -1,3 +1,4 @@
+import ServicesOverview from "../../components/home/ServicesOverview";
 import ServiceHero from "../../components/services/ServiceHero";
 import ServiceInfoSection from "../../components/services/ServiceInfoSection";
 
@@ -78,6 +79,8 @@ export const Sprays = () => {
         image="/assets/Sprays-5.svg"
         reverse={false}
       />
+
+      <ServicesOverview />
     </>
   );
 };

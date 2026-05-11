@@ -1,3 +1,4 @@
+import ServicesOverview from "../../components/home/ServicesOverview";
 import ServiceHero from "../../components/services/ServiceHero";
 import ServiceInfoSection from "../../components/services/ServiceInfoSection";
 
@@ -76,6 +77,8 @@ Piaskowanie polega na rozsypaniu cienkiej warstwy piasku na trawniku, co poprawi
         image="/assets/LawnCare-hero.svg"
         reverse={false}
       />
+
+      <ServicesOverview />
     </>
   );
 };
