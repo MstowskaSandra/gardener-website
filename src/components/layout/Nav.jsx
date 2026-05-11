@@ -118,7 +118,7 @@ const Nav = () => {
         <div className="p-4 flex justify-end border-b border-gray-200">
           <button
             onClick={() => setIsOpen(false)}
-            className="p-2 rounded-full hover:bg-gray-200 transition-colors"
+            className="p-2 rounded-full hover:bg-gray-200 transition-colors cursor-pointer"
           >
             <FaTimes size={24} />
           </button>
@@ -142,7 +142,7 @@ const Nav = () => {
                 <Link
                   key={service.slug}
                   to={`/uslugi/${service.slug}`}
-                  className="block pl-6 text-xl text-gray-700 hover:text-green-700 py-1.5 transition-colors"
+                  className="pl-6 text-xl text-gray-700 hover:text-green-900 py-1.5 transition hover:translate-x-1 inline-block"
                   onClick={() => setIsOpen(false)}
                 >
                   {service.name}
@@ -169,7 +169,7 @@ const Nav = () => {
           <div className="pt-8 border-t border-gray-200 space-y-6">
             <div className="flex gap-6">
               <a
-                href="https://www.facebook.com/"
+                href="https://facebook.com/people/Owca-Ogrody/100087780861997/#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl hover:scale-110 transition-transform"
@@ -177,7 +177,7 @@ const Nav = () => {
                 <FaFacebook />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://instagram.com/owca.ogrody/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl hover:scale-110 transition-transform"
