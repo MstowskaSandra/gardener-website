@@ -17,7 +17,7 @@ export const Sprays = () => {
       <ServiceHero
         title="Opryski drzew i krzewów"
         text="Chronimy rośliny przed chorobami i szkodnikami. Wykonujemy profesjonalne opryski drzew i krzewów, dobierając odpowiednie środki i metody, aby zapewnić skuteczną i bezpieczną ochronę Twojego ogrodu."
-        image="/assets/Sprays-hero.svg"
+        image="/assets/Sprays-hero.webp"
       />
       <ServiceInfoSection
         title="Opryski drzew i krzewów"
@@ -43,7 +43,7 @@ export const Sprays = () => {
           "lepsze kwitnienie i owocowanie",
           "silniejsze rośliny przez cały sezon",
         ]}
-        image="/assets/Sprays-2.svg"
+        image="/assets/Sprays-2.webp"
         reverse={true}
       />
 

@@ -17,7 +17,7 @@ export const TreeRemoval = () => {
       <ServiceHero
         title="Wycinka i pielęgnacja drzew"
         text="Oferujemy profesjonalną wycinkę drzew oraz prace pielęgnacyjne na posesjach prywatnych, działkach i terenach firmowych. Działamy sprawnie, bezpiecznie i z dbałością o otoczenie."
-        image="/assets/TreeCare-hero.svg"
+        image="/assets/TreeCare-hero.webp"
       />
 
       <ServiceInfoSection
@@ -30,7 +30,7 @@ export const TreeRemoval = () => {
           "cięcie pnia na mniejsze elementy",
           "uprzątnięcie miejsca po wycince",
         ]}
-        image="/assets/TreeCare-1.svg"
+        image="/assets/TreeCare-1.webp"
         reverse={false}
       />
 
@@ -44,7 +44,7 @@ export const TreeRemoval = () => {
           "prace w ciasnej zabudowie",
           "minimalizacja ryzyka uszkodzeń",
         ]}
-        image="/assets/TreeCare-2.svg"
+        image="/assets/TreeCare-2.webp"
         reverse={true}
       />
 
@@ -58,7 +58,7 @@ export const TreeRemoval = () => {
           "większe bezpieczeństwo otoczenia",
           "kontrolowany wzrost drzewa",
         ]}
-        image="/assets/TreeCare-3.svg"
+        image="/assets/TreeCare-3.webp"
         reverse={false}
       />
 
@@ -72,7 +72,7 @@ export const TreeRemoval = () => {
           "lepsza stabilność drzewa",
           "estetyczny wygląd",
         ]}
-        image="/assets/TreeCare-4.svg"
+        image="/assets/TreeCare-4.webp"
         reverse={true}
       />
 
@@ -86,7 +86,7 @@ export const TreeRemoval = () => {
           "usługi rębakiem",
           "gotowy i uporządkowany teren",
         ]}
-        image="/assets/GardenCleaning-4.svg"
+        image="/assets/GardenCleaning-4.webp"
         reverse={false}
       />
 

@@ -30,7 +30,7 @@ export const GardenCare = () => {
           "zagęszczanie roślin poprzez cięcie",
           "sprzątanie po wykonanej usłudze",
         ]}
-        image="/assets/GardenCare-1.svg"
+        image="/assets/GardenCare-1.webp"
         reverse={false}
       />
 

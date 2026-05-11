@@ -30,7 +30,7 @@ export const GardenCleaning = () => {
           "oczyszczanie rabat i trawnika",
           "zabezpieczanie roślin sezonowych",
         ]}
-        image="/assets/GardenCleaning-1.svg"
+        image="/assets/GardenCleaning-1.webp"
         reverse={false}
       />
 
@@ -72,7 +72,7 @@ export const GardenCleaning = () => {
           "łatwiejszy transport materiału",
           "możliwość wykorzystania zrębków",
         ]}
-        image="/assets/GardenCleaning-4.svg"
+        image="/assets/GardenCleaning-4.webp"
         reverse={true}
       />
 
