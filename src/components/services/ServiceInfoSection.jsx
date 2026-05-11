@@ -1,3 +1,4 @@
+import CallButton from "../ui/CallButton";
 import Reveal from "../ui/Reveal";
 
 const ServiceInfoSection = ({
@@ -62,9 +63,7 @@ const ServiceInfoSection = ({
         <div
           className={`flex pt-6 ${reverse ? "justify-start" : "justify-end"}`}
         >
-          <button className="bg-orange-500 text-white px-3 py-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:bg-orange-600 transition cursor-pointer">
-            Zadzwoń teraz
-          </button>
+          <CallButton variant="orange" text="Zadzwoń" />
         </div>
       </Reveal>
     </section>

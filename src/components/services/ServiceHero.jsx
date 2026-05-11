@@ -15,13 +15,19 @@ export const ServiceHero = ({ title, text, image }) => {
         </h1>
         <p className="mt-6 font-semibold text-xl text-gray-700 ">{text}</p>
         <div className="flex gap-4 sm:gap-6 lg:gap-8 mt-10 lg:mt-20 lg:justify-start justify-center flex-wrap">
-          <button className="bg-green-800 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-green-900 transition cursor-pointer">
+          <a
+            href="#services-overview"
+            className="bg-green-800 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-green-900 transition cursor-pointer"
+          >
             Inne Usługi
-          </button>
+          </a>
 
-          <button className="bg-orange-500 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-orange-600 transition cursor-pointer">
+          <a
+            href="tel:+48533615677"
+            className="bg-orange-500 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-orange-600 transition cursor-pointer"
+          >
             Zadzwoń teraz
-          </button>
+          </a>
         </div>
       </motion.div>
 
