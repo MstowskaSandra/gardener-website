@@ -15,7 +15,7 @@ export const LocationArea = () => (
         />
       </div>
 
-      <Reveal delay={0.2} className="flex flex-col gap-4 font-mont">
+      <Reveal delay={0.2} className="flex flex-col gap-4 font-mont px-8">
         <p className="text-orange-500 font-bold tracking-wide">
           Gdzie działamy?
         </p>
@@ -30,7 +30,7 @@ export const LocationArea = () => (
           ogrody, jak i tereny zielone przy firmach.
         </p>
 
-        <div className="relative bg-[#ebe4d6] border border-gray-200 shadow-xl rounded-3xl px-6 sm:px-8 lg:px-12 py-6 max-w-full md:max-w-fit hover:scale-[1.03] hover:shadow-2xl transition duration-500">
+        <div className="relative bg-[#ebe4d6] border border-gray-200 shadow-xl rounded-3xl px-8 lg:px-12 py-6 max-w-full md:max-w-fit hover:scale-[1.03] hover:shadow-2xl transition duration-500">
           <div className="absolute -top-4 -right-4 w-16 h-16 bg-green-200 rounded-full blur-2xl opacity-50"></div>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-8">
@@ -52,7 +52,7 @@ export const LocationArea = () => (
       </Reveal>
     </div>
 
-    <div className="max-w-7xl mx-auto flex flex-row flex-wrap items-center justify-between gap-12 mt-12">
+    <div className="max-w-7xl mx-auto flex flex-row flex-wrap items-center sm:justify-between justify-center gap-12 mt-12">
       <a
         href="https://maps.app.goo.gl/1YNFGqNLspPWdPC46"
         target="_blank"
