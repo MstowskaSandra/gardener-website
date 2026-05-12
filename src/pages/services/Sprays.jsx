@@ -29,7 +29,7 @@ export const Sprays = () => {
           "zabiegi profilaktyczne",
           "ochrona roślin sezonowych",
         ]}
-        image="/assets/Sprays-1.svg"
+        image="/assets/Sprays-1.webp"
         reverse={false}
       />
 
@@ -57,7 +57,7 @@ export const Sprays = () => {
           "ochrona młodych pędów i liści",
           "zdrowszy ogród",
         ]}
-        image="/assets/Sprays-3.svg"
+        image="/assets/Sprays-3.webp"
         reverse={false}
       />
 
@@ -71,7 +71,7 @@ export const Sprays = () => {
           "wzmocnienie odporności roślin",
           "planowanie ochrony całorocznej",
         ]}
-        image="/assets/Sprays-4.svg"
+        image="/assets/Sprays-4.webp"
         reverse={true}
       />
 
@@ -85,7 +85,7 @@ export const Sprays = () => {
           "estetyczny wygląd roślin",
           "lepszy rozwój przez cały sezon",
         ]}
-        image="/assets/Sprays-5.svg"
+        image="/assets/Sprays-5.webp"
         reverse={false}
       />
 

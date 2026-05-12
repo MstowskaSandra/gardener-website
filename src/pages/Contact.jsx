@@ -27,7 +27,7 @@ const Contact = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/assets/background-section4.svg')",
+              backgroundImage: "url('/assets/background-section4.webp')",
               backgroundPosition: "center 30%",
             }}
           >

@@ -23,7 +23,7 @@ const Home = () => {
       <AboutFeatures />
       <WorkProcess />
       <LargeBanner
-        imgUrl="/assets/background-section4.svg"
+        imgUrl="/assets/background-section4.webp"
         text="Dbamy o szczegóły."
       />
       <ServicesOverview />
@@ -33,7 +33,7 @@ const Home = () => {
       />
       <ReviewSection />
       <MidBanner
-        imgUrl="/assets/background-section-path.svg"
+        imgUrl="/assets/background-section-path.webp"
         text="Można na Nas liczyć."
       />
       <LocationArea />

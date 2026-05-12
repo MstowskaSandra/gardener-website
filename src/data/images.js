@@ -10,12 +10,12 @@ const images = [
   },
   { id: 6, src: "/assets/LawnCare-5.webp", title: "Koszenie trawników" },
   { id: 7, src: "/assets/LawnCare-4.webp", title: "Rabaty kwietne" },
-  { id: 8, src: "/assets/GardenCleaning-2.svg", title: "Odżywianie trawnika" },
-  { id: 9, src: "/assets/GardenCleaning-4.svg", title: "Praca rębakiem" },
-  { id: 10, src: "/assets/GardenCleaning-5.svg", title: "Sprzątanie ogrodu" },
+  { id: 8, src: "/assets/GardenCleaning-2.webp", title: "Odżywianie trawnika" },
+  { id: 9, src: "/assets/GradenCleaning-4.webp", title: "Praca rębakiem" },
+  { id: 10, src: "/assets/GardenCleaning-5.webp", title: "Sprzątanie ogrodu" },
   {
     id: 11,
-    src: "/assets/GardenCleaning-hero.svg",
+    src: "/assets/GardenCleaning-hero.webp",
     title: "Sadzenie krzewów",
   },
   { id: 12, src: "/assets/LawnCare-2.webp", title: "Nawożenie trawnika" },
@@ -30,10 +30,10 @@ const images = [
     src: "/assets/LawnCare-hero.webp",
     title: "Koszenie dużych powierzchni w firmach",
   },
-  { id: 15, src: "/assets/Sprays-2.svg", title: "Opryski ochronne" },
+  { id: 15, src: "/assets/Sprays-2.webp", title: "Opryski ochronne" },
   {
     id: 16,
-    src: "/assets/TreeCare-3.svg",
+    src: "/assets/TreeCare-3.webp",
     title: "Profesjonalne przycinanie drzew",
   },
   { id: 17, src: "/assets/TreeCare-4.webp", title: "Redukcja korony drzew" },
@@ -44,7 +44,7 @@ const images = [
     title: "Przygotowanie ogrodu do zimy",
   },
   { id: 19, src: "/assets/image-section2.svg", title: "Formowanie krzewów" },
-  { id: 20, src: "/assets/GardenCleaning-3.svg", title: "Sprzątanie liści" },
+  { id: 20, src: "/assets/GardenCleaning-3.webp", title: "Sprzątanie liści" },
 ];
 
 export default images;

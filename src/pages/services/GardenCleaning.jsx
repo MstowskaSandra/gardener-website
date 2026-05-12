@@ -72,7 +72,7 @@ export const GardenCleaning = () => {
           "łatwiejszy transport materiału",
           "możliwość wykorzystania zrębków",
         ]}
-        image="/assets/GardenCleaning-4.webp"
+        image="/assets/GradenCleaning-4.webp"
         reverse={true}
       />
 

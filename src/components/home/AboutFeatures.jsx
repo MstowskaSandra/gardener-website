@@ -8,7 +8,7 @@ export const AboutFeatures = () => (
       <Reveal width="100%">
         <div className="relative w-full aspect-4/3 lg:aspect-5/4 overflow-hidden rounded-3xl shadow-2xl border-2 border-gray-300">
           <img
-            src="/assets/image-section2.svg"
+            src="/assets/image-section2.webp"
             alt="Ogrodnik"
             className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-700 "
           />
