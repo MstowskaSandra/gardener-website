@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export const Hero = () => (
-  <section className="relative bg-[#EBE4D6] overflow-hidden min-h-[90vh] lg:min-h-screen">
+  <section className="relative bg-[#EBE4D6] min-h-[90vh] lg:min-h-screen">
     <div
       className="absolute inset-0 lg:hidden bg-cover bg-center opacity-30"
       style={{
