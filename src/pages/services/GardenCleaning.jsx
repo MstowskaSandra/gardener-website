@@ -17,7 +17,7 @@ export const GardenCleaning = () => {
       <ServiceHero
         title="Kompleksowe sprzątanie ogrodów"
         text="Uporządkowany ogród to estetyczna i funkcjonalna przestrzeń przez cały rok. Oferujemy profesjonalne sprzątanie ogrodów, działek oraz terenów zielonych – sezonowo i jednorazowo."
-        image="/assets/GardenCleaning-hero.svg"
+        image="/assets/GardenCleaning-hero.webp"
       />
 
       <ServiceInfoSection
@@ -44,7 +44,7 @@ export const GardenCleaning = () => {
           "porządkowanie terenu",
           "przygotowanie działki do dalszych prac",
         ]}
-        image="/assets/GardenCleaning-2.svg"
+        image="/assets/GardenCleaning-2.webp"
         reverse={true}
       />
 
@@ -58,7 +58,7 @@ export const GardenCleaning = () => {
           "sprzątanie podjazdów i posesji",
           "wywóz lub składowanie liści",
         ]}
-        image="/assets/GardenCleaning-3.svg"
+        image="/assets/GardenCleaning-3.webp"
         reverse={false}
       />
 
@@ -86,7 +86,7 @@ export const GardenCleaning = () => {
           "więcej przestrzeni użytkowej",
           "gotowość ogrodu do kolejnych prac",
         ]}
-        image="/assets/GardenCleaning-5.svg"
+        image="/assets/GardenCleaning-5.webp"
         reverse={false}
       />
 
