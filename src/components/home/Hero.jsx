@@ -5,7 +5,7 @@ export const Hero = () => (
     <div
       className="absolute inset-0 lg:hidden bg-cover bg-center opacity-30"
       style={{
-        backgroundImage: "url('/assets/background-section-hero(1).webp')",
+        backgroundImage: "url('/assets/background-section-hero(2).webp')",
       }}
     />
 
@@ -18,7 +18,7 @@ export const Hero = () => (
       <div
         className="w-full h-full bg-no-repeat bg-cover bg-right"
         style={{
-          backgroundImage: "url('/assets/background-section-hero(1).webp')",
+          backgroundImage: "url('/assets/background-section-hero(2).webp')",
         }}
       />
     </motion.div>
