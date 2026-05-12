@@ -86,7 +86,7 @@ export const TreeRemoval = () => {
           "usługi rębakiem",
           "gotowy i uporządkowany teren",
         ]}
-        image="/assets/GardenCleaning-4.webp"
+        image="/assets/GradenCleaning-4.webp"
         reverse={false}
       />
 
