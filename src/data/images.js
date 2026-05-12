@@ -1,8 +1,8 @@
 const images = [
-  { id: 1, src: "/assets/GardenCare-1.svg", title: "Wyrównanie żywopłotu" },
-  { id: 2, src: "/assets/GardenCare-2.svg", title: "Formowanie krzewów" },
-  { id: 3, src: "/assets/GardenCare-3.svg", title: "Formowanie ozdobne" },
-  { id: 4, src: "/assets/GardenCare-hero1.svg", title: "Formowanie spiralne" },
+  { id: 1, src: "/assets/GardenCare-1.webp", title: "Wyrównanie żywopłotu" },
+  { id: 2, src: "/assets/GardenCare-2.webp", title: "Formowanie krzewów" },
+  { id: 3, src: "/assets/GardenCare-3.webp", title: "Formowanie ozdobne" },
+  { id: 4, src: "/assets/GardenCare-hero1.webp", title: "Formowanie spiralne" },
   {
     id: 5,
     src: "/assets/TreeCare-hero.webp",

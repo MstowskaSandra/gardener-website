@@ -17,7 +17,7 @@ export const GardenCare = () => {
       <ServiceHero
         title="Kompleksowa pielęgnacja ogrodów"
         text="Zadbany ogród to wizytówka każdej posesji. Oferujemy profesjonalną pielęgnację ogrodów prywatnych, firmowych oraz terenów zielonych – od regularnych prac porządkowych po specjalistyczne zabiegi pielęgnacyjne roślin."
-        image="/assets/GardenCare-hero1.svg"
+        image="/assets/GardenCare-hero1.webp"
       />
 
       <ServiceInfoSection
@@ -44,7 +44,7 @@ export const GardenCare = () => {
           "formowanie krzewów ozdobnych",
           "przygotowanie roślin do sezonu",
         ]}
-        image="/assets/GardenCare-2.svg"
+        image="/assets/GardenCare-2.webp"
         reverse={true}
       />
 
@@ -58,7 +58,7 @@ export const GardenCare = () => {
           "estetyczny wygląd rabat",
           "lepszy rozwój roślin",
         ]}
-        image="/assets/GardenCare-3.svg"
+        image="/assets/GardenCare-3.webp"
         reverse={false}
       />
 
