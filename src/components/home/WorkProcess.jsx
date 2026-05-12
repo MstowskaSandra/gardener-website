@@ -6,7 +6,7 @@ import Reveal from "../ui/Reveal";
 
 export const WorkProcess = () => (
   <section className="bg-[#ebe4d6] pt-16 pb-6 lg:pt-18 font-text overflow-hidden">
-    <div className="max-w-7xl mx-auto px-16 lg:px-12 text-center">
+    <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
       <Reveal width="100%">
         <p className="text-orange-500 font-bold mb-2 tracking-wide">
           Jak wygląda współpraca?
