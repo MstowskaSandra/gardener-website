@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 import Reveal from "../ui/Reveal";
 
 export const AboutFeatures = () => (
-  <section className="bg-[#fafff4] py-16 px-4 sm:px-6 lg:px-12 lg:py-24 font-text">
+  <section className="bg-[#fafff4] py-16 px-2 sm:px-6 lg:px-12 lg:py-24 font-text">
     <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
       <Reveal width="100%">
         <div className="relative w-full aspect-4/3 lg:aspect-5/4 overflow-hidden rounded-3xl shadow-2xl border-2 border-gray-300">
