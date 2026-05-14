@@ -41,7 +41,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl md:mx-auto px-6 py-16 lg:py-24">
+        <div className="max-w-6xl md:mx-auto  px-4 lg:px-6 py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
             <Reveal delay={0.1} className="order-2 lg:order-1">
               <div className="flex flex-col gap-6 text-green-900">
