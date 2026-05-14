@@ -185,7 +185,7 @@ const Nav = () => {
                 <FaInstagram />
               </a>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 mb-8">
               <p className="text-gray-600 text-md">Skontaktuj się z nami</p>
               <a
                 href="tel:533615677"
