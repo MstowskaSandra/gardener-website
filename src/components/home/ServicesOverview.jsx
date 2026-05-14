@@ -18,7 +18,7 @@ export const ServicesOverview = () => (
 
       <div className="flex flex-wrap justify-center gap-6 mt-16">
         {servicesCards.map((service, index) => (
-          <ServiceCard key={service.title} {...service} delay={0.3 * index} />
+          <ServiceCard key={service.title} {...service} delay={0.2 * index} />
         ))}
       </div>
       <div className="flex flex-col sm:flex-row items-center sm:items-center justify-end gap-4 pt-16 lg:pt-30  font-mont text-sm font-semibold text-green-800 text-center sm:text-left">

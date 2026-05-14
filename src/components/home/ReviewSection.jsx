@@ -22,7 +22,7 @@ export const ReviewSection = () => (
 
     <div className="flex flex-wrap justify-center gap-6 mt-12 px-12">
       {reviews.map((item, index) => (
-        <ReviewCard key={index} {...item} delay={0.3 + index * 0.15} />
+        <ReviewCard key={index} {...item} delay={0.2 + index * 0.1} />
       ))}
     </div>
 
