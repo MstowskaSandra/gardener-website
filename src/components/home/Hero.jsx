@@ -56,7 +56,7 @@ export const Hero = () => (
           </a>
 
           <a
-            href="tel:+48533615677"
+            href="tel:734414640"
             className="bg-orange-500 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-orange-600 transition hover:scale-105 active:scale-95 cursor-pointer"
           >
             Zadzwoń teraz

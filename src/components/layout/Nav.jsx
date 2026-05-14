@@ -88,10 +88,10 @@ const Nav = () => {
             </div>
             <div className="flex flex-col items-end font-text">
               <a
-                href="tel:533615677"
+                href="tel:734414640"
                 className="text-black-700 font-mont font-bold text-sm hover:underline"
               >
-                533 615 677
+                734 414 640
               </a>
               <span className="text-gray-600 font-mont font-semibold text-xs">
                 Skontaktuj się z nami
@@ -188,10 +188,10 @@ const Nav = () => {
             <div className="flex flex-col gap-1 pb-20">
               <p className="text-gray-600 text-md">Skontaktuj się z nami</p>
               <a
-                href="tel:533615677"
+                href="tel:734414640"
                 className="block text-xl font-bold text-black-700 hover:underline"
               >
-                533 615 677
+                734 414 640
               </a>
             </div>
           </div>

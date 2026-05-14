@@ -57,7 +57,7 @@ const Contact = () => {
 
                 <div className="space-y-10">
                   <a
-                    href="tel:+48123456789"
+                    href="tel:734414640"
                     className="flex items-center gap-6 group cursor-pointer w-fit"
                   >
                     <div className="bg-white p-4 rounded-2xl shadow-md border border-gray-100 group-hover:bg-green-800 group-hover:text-white transition-all duration-300">
@@ -71,13 +71,13 @@ const Contact = () => {
                         Zadzwoń do nas
                       </p>
                       <p className="text-base lg:text-xl font-extrabold">
-                        +48 123 456 789
+                        734 414 640
                       </p>
                     </div>
                   </a>
 
                   <a
-                    href="mailto:biuro@ogrodnik.pl"
+                    href="mailto:owca.ogrody@gmail.com"
                     className="flex items-center gap-6 group cursor-pointer w-fit"
                   >
                     <div className="bg-white p-4 rounded-2xl shadow-md border border-gray-100 group-hover:bg-green-800 group-hover:text-white transition-all duration-300">
@@ -91,7 +91,7 @@ const Contact = () => {
                         Napisz e-mail
                       </p>
                       <p className="text-base lg:text-xl font-extrabold text-wrap">
-                        biuro@ogrodnik.pl
+                        owca.ogrody@gmail.com
                       </p>
                     </div>
                   </a>

@@ -10,7 +10,7 @@ export const CallButton = ({ variant = "green", text = "Zadzwoń do nas" }) => {
 
   return (
     <a
-      href="tel:+48533615677"
+      href="tel:734414640"
       className={`cursor-pointer flex items-center gap-2 text-white px-4 py-2 rounded-full transition w-fit font-mont font-bold text-sm ${selectedVariant}`}
     >
       <MdOutlinePhoneCallback className="w-5 h-5" />
