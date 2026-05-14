@@ -7,7 +7,7 @@ export const ServicesOverview = () => (
     id="services-overview"
     className="bg-[#fafff4] pt-16 pb-8 lg:pt-20 font-text px-6 lg:px-12"
   >
-    <div className="max-w-8xl mx-auto px-6 lg:px-10 text-center">
+    <div className="max-w-8xl mx-auto text-center">
       <p className="text-orange-500 font-bold mb-2 tracking-wide">
         Nasze usługi
       </p>
