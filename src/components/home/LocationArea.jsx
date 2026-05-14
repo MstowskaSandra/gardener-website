@@ -5,7 +5,7 @@ import Reveal from "../ui/Reveal";
 import { motion } from "framer-motion";
 
 export const LocationArea = () => (
-  <section className="bg-[#FAFFF4] py-12 px-8 sm:px-12 lg:py-16 lg:px-12 font-text">
+  <section className="bg-[#FAFFF4] py-12 px-6 lg:py-16 lg:px-12 font-text">
     <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
       <div className="relative w-full aspect-4/3 md:aspect-5/4 overflow-hidden rounded-2xl">
         <img
@@ -16,15 +16,15 @@ export const LocationArea = () => (
       </div>
 
       <Reveal delay={0.2} className="flex flex-col gap-4 font-mont px-8">
-        <p className="text-orange-500 font-bold tracking-wide">
+        <p className="text-orange-500 font-bold text-center lg:text-left tracking-wide">
           Gdzie działamy?
         </p>
 
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-green-800 tracking-wider">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl text-center lg:text-left font-extrabold text-green-800 tracking-wider">
           Ogrodnik w Strzelinie i okolicach
         </h2>
 
-        <p className="text-sm sm:text-base pb-4">
+        <p className="text-sm sm:text-base pb-4 text-center lg:text-left">
           Świadczymy kompleksowe usługi ogrodnicze w Strzelinie oraz
           miejscowościach w promieniu ok 50 km. Obsługujemy zarówno prywatne
           ogrody, jak i tereny zielone przy firmach.
