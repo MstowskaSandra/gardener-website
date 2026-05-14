@@ -61,7 +61,7 @@ export const ContactForm = () => {
 
   return (
     <Reveal delay={0.3} className=" order-1 lg:order-2 w-full" width="100%">
-      <div className="bg-white p-8 lg:p-12 rounded-4xl shadow-2xl border border-gray-200">
+      <div className="bg-white p-4 sm:p-6 lg:p-12 rounded-4xl shadow-2xl border border-gray-200">
         <h3 className="text-xl font-extrabold text-green-900 mb-8 uppercase tracking-tight text-center">
           Zadaj pytanie
         </h3>
