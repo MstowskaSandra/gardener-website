@@ -41,15 +41,15 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+        <div className="max-w-7xl md:mx-auto px-6 py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
             <Reveal delay={0.1} className="order-2 lg:order-1">
               <div className="flex flex-col gap-6 text-green-900">
-                <div className="border-b-2 border-green-900 mb-8">
-                  <h2 className="text-xl font-extrabold uppercase mb-3 tracking-tight">
+                <div className="border-b-2 border-green-900 mb-8 px-4">
+                  <h2 className="text-center md:text-left text:lg lg:text-xl font-extrabold uppercase mb-3 tracking-tight">
                     Skontaktuj się z nami
                   </h2>
-                  <p className="text-gray-700 font-semibold mb-10 max-w-md text-sm leading-relaxed">
+                  <p className="text-center md:text-left text-gray-700 font-semibold mb-10 max-w-md text-xs lg:text-sm leading-relaxed">
                     Masz pytania dotyczące Twojego ogrodu? Chętnie pomożemy.
                     Skontaktuj się z nami telefonicznie lub przez formularz.
                   </p>
@@ -70,7 +70,9 @@ const Contact = () => {
                       <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                         Zadzwoń do nas
                       </p>
-                      <p className="text-xl font-extrabold">+48 123 456 789</p>
+                      <p className="text-base lg:text-xl font-extrabold">
+                        +48 123 456 789
+                      </p>
                     </div>
                   </a>
 
@@ -88,7 +90,7 @@ const Contact = () => {
                       <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                         Napisz e-mail
                       </p>
-                      <p className="text-xl font-extrabold text-wrap">
+                      <p className="text-base lg:text-xl font-extrabold text-wrap">
                         biuro@ogrodnik.pl
                       </p>
                     </div>
@@ -110,14 +112,14 @@ const Contact = () => {
                       <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                         Znajdź nas
                       </p>
-                      <p className="text-xl font-extrabold">
+                      <p className="text-base lg:text-xl font-extrabold">
                         Brzegowa 48, 57-100 Strzelin
                       </p>
                     </div>
                   </a>
                 </div>
 
-                <div className="flex gap-4 pt-6">
+                <div className="flex justify-center md:justify-start gap-4 pt-6">
                   <a
                     href="https://facebook.com/people/Owca-Ogrody/100087780861997/#"
                     target="_blank"
