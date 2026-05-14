@@ -5,7 +5,7 @@ import Reveal from "../ui/Reveal";
 import { motion } from "framer-motion";
 
 export const LocationArea = () => (
-  <section className="bg-[#FAFFF4] py-12 px-6 lg:py-16 lg:px-12 font-text">
+  <section className="bg-[#FAFFF4] py-12 lg:py-16 font-text">
     <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
       <div className="relative w-full aspect-4/3 md:aspect-5/4 overflow-hidden rounded-2xl">
         <img
