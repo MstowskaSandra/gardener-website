@@ -54,7 +54,10 @@ const ServiceInfoSection = ({
           </h4>
           <ul>
             {listElements.map((e, index) => (
-              <li key={index} className="text-sm lg:text-base font-mont py-1">
+              <li
+                key={index}
+                className="text-sm  font-medium lg:text-base font-mont py-1"
+              >
                 <span className="mx-2 font-bold text-green-900 text-lg">✓</span>{" "}
                 {e}
               </li>
