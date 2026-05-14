@@ -26,7 +26,7 @@ const ServiceCard = ({
         delay: delay,
         ease: "easeOut",
       }}
-      className="flex-1 min-w-55 max-w-70 h-80 bg-[#fafff4] rounded-3xl border border-gray-300 shadow-lg flex flex-col justify-between overflow-hidden hover:scale-[1.1] hover:shadow-2xl transition-transform"
+      className="flex-1 min-w-55 max-w-70 h-80 bg-[#fafff4] rounded-3xl border border-gray-300 shadow-lg flex flex-col justify-between overflow-hidden md:hover:scale-[1.1] md:hover:shadow-2xl transition-transform"
     >
       <div className="pb-3 font-mont">
         <div
@@ -56,7 +56,7 @@ const ServiceCard = ({
       <div className="flex justify-end pr-6 pb-4">
         <Link
           to={`/uslugi/${link}`}
-          className="bg-orange-500 font-mont text-white px-4 py-1.5 rounded-full text-xs font-semibold hover:bg-orange-600 transition"
+          className="cursor-pointer bg-orange-500 font-mont text-white px-4 py-1.5 rounded-full text-xs font-semibold hover:bg-orange-600 transition"
         >
           {buttonText}
         </Link>
