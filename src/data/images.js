@@ -43,7 +43,7 @@ const images = [
     src: "/assets/GardenCleaning-1.webp",
     title: "Przygotowanie ogrodu do zimy",
   },
-  { id: 19, src: "/assets/image-section2.svg", title: "Formowanie krzewów" },
+  { id: 19, src: "/assets/image-section2.webp", title: "Formowanie krzewów" },
   { id: 20, src: "/assets/GardenCleaning-3.webp", title: "Sprzątanie liści" },
 ];
 

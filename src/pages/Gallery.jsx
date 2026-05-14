@@ -59,12 +59,12 @@ const GardenGallery = () => {
           </div>
 
           <Reveal delay={0.4} width="100%" className="mx-auto max-w-3xl">
-            <div className="mt-16 bg-[#FAFFF4] backdrop-blur-md py-6 px-8 rounded-4xl border-2 border-green-800/20 flex flex-col items-center justify-center gap-4 shadow-sm">
+            <div className="mt-16 bg-[#FAFFF4] backdrop-blur-md py-6 px-4 lg:px-8 rounded-4xl border-2 border-green-800/20 flex flex-col items-center justify-center gap-4 shadow-sm">
               <div className="flex flex-col sm:flex-row items-center gap-2 text-center">
-                <p className="font-mont text-md font-bold text-green-900">
+                <p className="font-mont text-sm lg:text-md font-bold text-green-900">
                   Chcesz zobaczyć więcej?
                 </p>
-                <span className="text-orange-600 font-bold text-md tracking-wide">
+                <span className="text-orange-600 font-bold text-sm lg:text-md tracking-wide">
                   Śledź nasze najnowsze projekty!
                 </span>
               </div>
