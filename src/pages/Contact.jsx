@@ -41,7 +41,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div className="max-w-6xl mx-auto px-1 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
             <Reveal delay={0.1} className="order-2 lg:order-1">
               <div className="flex flex-col gap-6 text-green-900">
@@ -70,7 +70,7 @@ const Contact = () => {
                       <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                         Zadzwoń do nas
                       </p>
-                      <p className="text-base lg:text-xl font-extrabold">
+                      <p className="text-sm lg:text-xl font-extrabold">
                         734 414 640
                       </p>
                     </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                       <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                         Napisz e-mail
                       </p>
-                      <p className="text-base lg:text-xl font-extrabold text-wrap">
+                      <p className="text-sm lg:text-xl font-extrabold text-wrap">
                         owca.ogrody@gmail.com
                       </p>
                     </div>
@@ -112,7 +112,7 @@ const Contact = () => {
                       <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                         Znajdź nas
                       </p>
-                      <p className="text-base lg:text-xl font-extrabold">
+                      <p className="text-sm lg:text-xl font-extrabold">
                         Brzegowa 48, 57-100 Strzelin
                       </p>
                     </div>
