@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 import Reveal from "../ui/Reveal";
 
 export const AboutFeatures = () => (
-  <section className="bg-[#fafff4] py-16 px-2 sm:px-6 lg:px-12 lg:py-24 font-text">
+  <section className="bg-[#fafff4] py-16 px-2 lg:px-12 lg:py-24 font-text">
     <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
       <Reveal width="100%">
         <div className="relative w-full aspect-4/3 lg:aspect-5/4 overflow-hidden rounded-3xl shadow-2xl border-2 border-gray-300">
@@ -15,7 +15,7 @@ export const AboutFeatures = () => (
         </div>
       </Reveal>
 
-      <div>
+      <div className="flex-col justify-center text-left">
         <Reveal delay={0.2}>
           <p className="text-orange-500 font-bold mb-2 tracking-wide">
             Dlaczego my?
@@ -23,12 +23,11 @@ export const AboutFeatures = () => (
         </Reveal>
 
         <Reveal delay={0.3}>
-          <h2 className="text-2xl lg:text-3xl font-mont font-extrabold text-green-800 tracking-wider">
+          <h2 className="text-xl lg:text-3xl font-mont font-extrabold text-green-800 tracking-wider">
             Mamy 9+ lat doświadczenia w pielęgnacji ogrodów
           </h2>
         </Reveal>
 
-        {/* <div className="flex flex-col py-12 gap-6 items-center"> */}
         <div className="flex flex-col py-12 gap-6 items-center w-full max-w-full">
           {features.map((item, index) => (
             <Reveal key={item.title} delay={0.4 + index * 0.2} width="100%">
