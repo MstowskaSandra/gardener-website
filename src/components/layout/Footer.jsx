@@ -5,10 +5,12 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-[#12572b] text-white font-mont">
       <div className="max-w-7xl mx-auto px-12 py-12 border-b border-white/30 flex flex-col lg:flex-row justify-between gap-12">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h5 className="font-bold mb-4 text-lg">Nasze usługi</h5>
-            <ul className="space-y-2 text-sm text-white/80">
+            <h5 className="font-bold mb-2 lg:mb-4 text-md lg:text-lg">
+              Nasze usługi
+            </h5>
+            <ul className="space-y-2 text-xs lg:text-sm text-white/80">
               {services.map((item) => (
                 <li key={item.slug}>
                   <Link
@@ -23,8 +25,10 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h5 className="font-bold mb-4 text-lg">Nasze media</h5>
-            <div className="flex flex-col gap-2 text-sm text-white/80">
+            <h5 className="font-bold mb-2 lg:mb-4 text-md lg:text-lg">
+              Nasze media
+            </h5>
+            <div className="flex flex-col gap-2 text-xs lg:text-sm text-white/80">
               <a
                 href="https://instagram.com/owca.ogrody/"
                 target="_blank"
@@ -45,22 +49,24 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h5 className="font-bold mb-4 text-lg">Kontakt</h5>
-            <div className="flex flex-col gap-2 text-sm text-white/80">
+            <h5 className="font-bold mb-2 lg:mb-4 text-md lg:text-lg">
+              Kontakt
+            </h5>
+            <div className="flex flex-col gap-2 text-xs lg:text-sm text-white/80">
               <a
-                href="tel:512512512"
+                href="tel:734414640"
                 className="hover:text-white transition hover:translate-x-1 inline-block"
               >
-                <span className="font-semibold text-white">Tel:</span> 512 512
-                512
+                <span className="font-semibold text-white">Tel:</span> 734 414
+                640
               </a>
 
               <a
-                href="mailto:owcaogrody@gmail.com"
+                href="mailto:owca.ogrody@gmail.com"
                 className="hover:text-white transition hover:translate-x-1 inline-block"
               >
                 <span className="font-semibold text-white">Email:</span>{" "}
-                owcaogrody@gmail.com
+                owca.ogrody@gmail.com
               </a>
 
               <a
@@ -80,7 +86,7 @@ export const Footer = () => {
           <img
             src="/assets/logo-owca-white.svg"
             alt="Logo Owca Ogrody"
-            className="w-32 h-32 object-contain"
+            className="w-24 lg:w-32 h-24 lg:h-32 object-contain"
           />
           <p className="font-bold text-lg tracking-wider uppercase">
             Owca Ogrody
