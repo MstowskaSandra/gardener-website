@@ -4,9 +4,9 @@ const StepCard = ({ number, title, description, variant }) => {
 
   return (
     <div
-      className={`bg-[#fafff4] font-text px-6 py-8 w-full max-w-70 sm:max-w-55 rounded-4xl border-4 ${borderStyles} shadow-lg flex flex-col gap-4 hover:scale-105 transition hover:shadow-2xl`}
+      className={`bg-[#fafff4] font-text font-mont px-4 lg:px-6 py-8 w-full lg:max-w-70 max-w-55 rounded-4xl border-4 ${borderStyles} shadow-lg flex flex-col gap-2 lg:gap-4 hover:scale-105 transition hover:shadow-2xl`}
     >
-      <p className="text-6xl pb-4 font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
+      <p className="text-5xl lg:text-6xl  pb-2 lg:pb-4 font-bold [-webkit-text-stroke:2px_green] text-transparent leading-none">
         {number}
       </p>
 

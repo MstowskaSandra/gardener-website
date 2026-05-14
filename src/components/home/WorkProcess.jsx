@@ -6,7 +6,7 @@ import Reveal from "../ui/Reveal";
 
 export const WorkProcess = () => (
   <section className="bg-[#ebe4d6] pt-16 pb-6 lg:pt-18 font-text overflow-hidden">
-    <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
+    <div className="max-w-7xl mx-auto px-4 lg:px-12 text-center">
       <Reveal width="100%">
         <p className="text-orange-500 font-bold mb-2 tracking-wide">
           Jak wygląda współpraca?
@@ -19,18 +19,18 @@ export const WorkProcess = () => (
         </h2>
       </Reveal>
 
-      <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-6 flex-wrap">
+      <div className="px-4 mt-16 flex flex-col lg:flex-row items-center justify-center gap-6 flex-wrap">
         {steps.map((step, index) => (
           <div
             key={step.number}
             className="flex flex-col lg:flex-row items-center gap-6"
           >
-            <Reveal delay={0.4 + index * 0.3}>
+            <Reveal delay={0.4 + index * 0.15}>
               <StepCard {...step} />
             </Reveal>
 
             {index < steps.length - 1 && (
-              <Reveal delay={0.5 + index * 0.3}>
+              <Reveal delay={0.5 + index * 0.15}>
                 <FaArrowRight className="text-4xl text-green-800 rotate-90 lg:rotate-0 transition-transform duration-300 ease-out hover:scale-120" />
               </Reveal>
             )}
