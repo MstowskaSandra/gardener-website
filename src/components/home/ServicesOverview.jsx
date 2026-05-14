@@ -5,14 +5,14 @@ import CallButton from "../ui/CallButton";
 export const ServicesOverview = () => (
   <section
     id="services-overview"
-    className="bg-[#fafff4] pt-16 pb-8 lg:pt-20 font-text px-12"
+    className="bg-[#fafff4] pt-16 pb-8 lg:pt-20 font-text px-6 lg:px-12"
   >
-    <div className="max-w-8xl mx-auto px-12 lg:px-10 text-center">
+    <div className="max-w-8xl mx-auto px-6 lg:px-10 text-center">
       <p className="text-orange-500 font-bold mb-2 tracking-wide">
         Nasze usługi
       </p>
 
-      <h2 className="font-candal text-2xl lg:text-3xl font-bold text-green-900 leading-tight">
+      <h2 className="font-candal text-xl lg:text-3xl font-bold text-green-900 leading-tight">
         Kompleksowo zadbamy o Twój ogród
       </h2>
 
@@ -21,7 +21,7 @@ export const ServicesOverview = () => (
           <ServiceCard key={service.title} {...service} delay={0.3 * index} />
         ))}
       </div>
-      <div className="flex flex-col sm:flex-row items-center sm:items-center justify-end gap-4 pt-30 px-4 sm:px-0 font-mont text-sm font-semibold text-green-800 text-center sm:text-left">
+      <div className="flex flex-col sm:flex-row items-center sm:items-center justify-end gap-4 pt-16 lg:pt-30  font-mont text-sm font-semibold text-green-800 text-center sm:text-left">
         <span className="text-orange-500 font-bold text-md">
           Nie znalazłeś usługi dla siebie?
         </span>

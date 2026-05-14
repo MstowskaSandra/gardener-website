@@ -28,12 +28,12 @@ const ServiceCard = ({
       }}
       className="flex-1 min-w-55 max-w-70 h-80 bg-[#fafff4] rounded-3xl border border-gray-300 shadow-lg flex flex-col justify-between overflow-hidden hover:scale-[1.1] hover:shadow-2xl transition-transform"
     >
-      <div className="pb-3">
+      <div className="pb-3 font-mont">
         <div
           className={`flex items-center justify-center gap-2 px-2 py-4 rounded-full ${headerStyles}`}
         >
           <Icon className="text-base sm:text-lg lg:text-xl shrink-0" />
-          <h3 className="text-sm sm:text-sm lg:text-base font-bold text-center leading-tight">
+          <h3 className="text-sm font-bold text-center leading-tight">
             {title}
           </h3>
         </div>
@@ -43,7 +43,7 @@ const ServiceCard = ({
         {items?.map((item, index) => (
           <li
             key={index}
-            className="flex gap-2 text-sm font-semibold text-green-900 items-center"
+            className="flex gap-2 text-sm font-mont font-semibold text-green-900 items-center"
           >
             <span className="text-green-700 text-lg">
               <IoMdCheckmark />
@@ -56,7 +56,7 @@ const ServiceCard = ({
       <div className="flex justify-end pr-6 pb-4">
         <Link
           to={`/uslugi/${link}`}
-          className="bg-orange-500 text-white px-4 py-1.5 rounded-full text-xs font-semibold hover:bg-orange-600 transition"
+          className="bg-orange-500 font-mont text-white px-4 py-1.5 rounded-full text-xs font-semibold hover:bg-orange-600 transition"
         >
           {buttonText}
         </Link>
