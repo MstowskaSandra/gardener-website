@@ -115,10 +115,10 @@ const Nav = () => {
         ${isOpen ? "translate-x-0" : "translate-x-full"}
       `}
       >
-        <div className="p-4 flex justify-end border-b border-gray-200">
+        <div className="p-2 flex justify-end border-b border-gray-200">
           <button
             onClick={() => setIsOpen(false)}
-            className="p-2 rounded-full hover:bg-gray-200 transition-colors cursor-pointer"
+            className="p-3 rounded-full hover:bg-gray-200 transition-colors cursor-pointer"
           >
             <FaTimes size={24} />
           </button>
@@ -128,21 +128,21 @@ const Nav = () => {
           <div className="space-y-1">
             <Link
               to="/"
-              className="block text-2xl font-semibold text-gray-700 hover:text-green-700 py-1 transition-colors "
+              className="block text-xl font-semibold text-gray-700 hover:text-green-700 py-1 transition-colors "
               onClick={() => setIsOpen(false)}
             >
               Strona Główna
             </Link>
 
             <div>
-              <span className="block text-2xl font-semibold text-gray-700 py-1">
+              <span className="block text-xl font-semibold text-gray-700 py-1">
                 Usługi
               </span>
               {services.map((service) => (
                 <Link
                   key={service.slug}
                   to={`/uslugi/${service.slug}`}
-                  className="pl-6 text-xl text-gray-700 hover:text-green-900 py-1.5 transition hover:translate-x-1 inline-block"
+                  className="pl-6 text-md text-gray-700 hover:text-green-900 py-1.5 transition hover:translate-x-1 inline-block"
                   onClick={() => setIsOpen(false)}
                 >
                   {service.name}
@@ -152,21 +152,21 @@ const Nav = () => {
 
             <Link
               to="/galeria"
-              className="block text-2xl font-semibold text-gray-700 hover:text-green-700 py-1 transition-colors"
+              className="block text-xl font-semibold text-gray-700 hover:text-green-700 py-1 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Galeria
             </Link>
             <Link
               to="/kontakt"
-              className="block text-2xl font-semibold text-gray-700 hover:text-green-700 py-1 transition-colors"
+              className="block text-xl font-semibold text-gray-700 hover:text-green-700 py-1 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Kontakt
             </Link>
           </div>
 
-          <div className="pt-8 border-t border-gray-200 space-y-6">
+          <div className="pt-6 border-t border-gray-200 space-y-6">
             <div className="flex gap-6">
               <a
                 href="https://facebook.com/people/Owca-Ogrody/100087780861997/#"
@@ -185,11 +185,11 @@ const Nav = () => {
                 <FaInstagram />
               </a>
             </div>
-            <div className="flex flex-col gap-1.5">
-              <p className="text-gray-600 text-lg">Skontaktuj się z nami</p>
+            <div className="flex flex-col gap-1">
+              <p className="text-gray-600 text-md">Skontaktuj się z nami</p>
               <a
                 href="tel:533615677"
-                className="block text-2xl font-bold text-black-700 hover:underline"
+                className="block text-xl font-bold text-black-700 hover:underline"
               >
                 533 615 677
               </a>
