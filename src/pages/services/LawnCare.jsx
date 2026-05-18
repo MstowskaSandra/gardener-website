@@ -60,7 +60,7 @@ Aeracja polega na nakłuwaniu gleby w celu poprawy napowietrzenia i przepuszczal
       />
       <ServiceInfoSection
         title="Nawożenie trawnika"
-        text="ntensywna zieleń i zdrowy wzrost trawy.
+        text="Intensywna zieleń i zdrowy wzrost trawy.
 Odpowiednio dobrane nawozy dostarczają trawie niezbędnych składników odżywczych i wspierają jej wzrost przez cały sezon."
         subtitle="Efekty"
         listElements={[

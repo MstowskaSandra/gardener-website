@@ -9,7 +9,6 @@ const ServiceInfoSection = ({
   image,
   reverse = false,
 }) => {
-  console.log("reverse:", reverse);
   return (
     <section
       className={`
